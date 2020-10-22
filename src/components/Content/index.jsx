@@ -1,4 +1,6 @@
-import Content from './Content.jsx';
-// import './styles/styles.scss';
+import About from '../Content/About.jsx';
+import Home from '../Content/Home.jsx';
+import Projects from '../Content/Projects.jsx';
+import Contact from '../Content/Contact.jsx';
 
-export default Content;
+export { About, Home, Projects, Contact };

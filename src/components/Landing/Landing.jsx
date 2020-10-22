@@ -8,7 +8,7 @@ const Landing = () => {
   return <div>
     <img src={jd} atl="" className="logo"/>
     <div>Jessa Daggs</div>
-    <div>Engineer</div>
+    <div>Designer + Engineer</div>
   </div>;
 };
 
