@@ -74,7 +74,7 @@ app.get('/', (req, res) => {
 app.use(cors());
 app.use(express.static(DIST_DIR));
 app.use(express.json())
-app.use('/', router);
+// app.use('/', router);
 app.listen(3002)
 app.listen(port, function () {
  console.log('App listening on port: ' + port);
