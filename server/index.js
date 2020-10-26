@@ -3,20 +3,22 @@ const path = require('path');
 const router = express.Router();
 const nodemailer = require('nodemailer');
 const cors = require('cors');
-const creds = require('../config.js');
+require('dotenv').config();
+// const creds = require('../config.js');
+
 const app = express();
 const port = process.env.PORT || 3000;
 const DIST_DIR = path.join(__dirname, '../dist');
 const HTML_FILE = path.join(DIST_DIR, 'index.html');
 
-const transport = {
-  host: 'smtp.gmail.com',
-  port: 587,
-  auth: {
-    user: creds.USER,
-    pass: creds.PASS
-  }
-}
+// const transport = {
+//   host: 'smtp.gmail.com',
+//   port: 587,
+//   auth: {
+//     user: creds.USER,
+//     pass: creds.PASS
+//   }
+// }
 
 // const transporter = nodemailer.createTransport(transport);
 
