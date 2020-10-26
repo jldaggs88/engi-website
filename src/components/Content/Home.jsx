@@ -7,6 +7,9 @@ import Typography from '@material-ui/core/Typography';
 import Divider from '@material-ui/core/Divider';
 
 import AboutContent from './AboutContent.jsx';
+import ProjectContent from './ProjectsContent.jsx';
+import SocialButtons from './SocialButtons.jsx';
+import Messenger from './Messenger.jsx';
 import jessa1 from '../../Brand/jessa1.png';
 import './Home.scss';
 
@@ -48,8 +51,9 @@ const Home = () => {
             <img src={jessa1} className="home-pic"/>
           </CardContent>
           <CardContent className={classes.content}>
-            <Typography align="center" variant="h5" >Hi, I'm Jessa Daggs</Typography>
+            <Typography align="center" variant="h3" >Jessa Daggs</Typography>
             <Typography align="center" variant="h5" >UI Designer + Full Stack Engineer</Typography>
+            <SocialButtons />
           </CardContent>
         </div>
       </Card>
@@ -60,6 +64,28 @@ const Home = () => {
             {bull}About Me{bull}
           </Typography>
           <AboutContent />
+        </CardContent>
+        <CardActions>
+        </CardActions>
+      </Card>
+      <Divider />
+      <Card className={classes.root2} variant="outlined">
+        <CardContent>
+          <Typography variant="h" component="h2" align="center">
+            {bull}Projects{bull}
+          </Typography>
+          <ProjectContent />
+        </CardContent>
+        <CardActions>
+        </CardActions>
+      </Card>
+      <Divider />
+      <Card className={classes.root2} variant="outlined">
+        <CardContent>
+          <Typography variant="h" component="h2" align="center">
+              {bull}Let's Work Together!{bull}
+          </Typography>
+          <Messenger />
         </CardContent>
         <CardActions>
         </CardActions>
