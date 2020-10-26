@@ -17,7 +17,7 @@ import InstagramIcon from '@material-ui/icons/Instagram';
 import Typography from '@material-ui/core/Typography';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 
-import jessa2 from '../../Brand/jessa2.jpg';
+// import jessa2 from '../../Brand/jessa2.jpg';
 import './Contact.scss';
 import dev from '../../icons/dev.png';
 
