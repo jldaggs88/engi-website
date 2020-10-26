@@ -14,7 +14,7 @@ import { Home, About, Projects, Contact } from './components/Content/index.jsx';
 import Footer from './components/Footer/index.jsx';
 
 const App = () => {
-  const [moreClicked, setMoreClicked] = useState(false);
+  const [moreClicked, setMoreClicked] = useState(true);
 
   return (
     <div className="app-container">
