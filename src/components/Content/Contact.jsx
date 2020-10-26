@@ -9,7 +9,9 @@ import IconButton from '@material-ui/core/IconButton';
 import TextField from '@material-ui/core/TextField';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import Box from '@material-ui/core/Box';
-import Grid from '@material-ui/core/Grid'
+import Grid from '@material-ui/core/Grid';
+import Alert from '@material-ui/lab/Alert';
+
 // import Link from '@material-ui/core/Link';
 import InstagramIcon from '@material-ui/icons/Instagram';
 import Typography from '@material-ui/core/Typography';
@@ -25,7 +27,7 @@ const useStyles = makeStyles((theme) => ({
     justifyItems: 'center',
   },
   paper: {
-    padding: theme.spacing(1), //grid padding
+    padding: theme.spacing(1),
     textAlign: 'center',
     color: theme.palette.text.secondary,
   },
@@ -38,23 +40,24 @@ const Contact = () => {
     name: '',
     email: '',
     message: ''
-  })
+  });
+  const [alert, setAlert] = useState(null);
 
   const onNameChange = (event) => {
     setState({...state, name: event.target.value})
-  }
+  };
 
   const onEmailChange = (event) => {
     setState({...state, email: event.target.value})
-  }
+  };
 
   const onMessageChange = (event) => {
     setState({...state, message: event.target.value})
-  }
+  };
 
   const resetForm = () => {
     setState({name: '', email: '', message: ''})
-  }
+  };
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -65,10 +68,16 @@ const Contact = () => {
       data: state
     }).then((response)=>{
       if (response.data.status === 'success') {
-        alert("Message Sent."); 
+        console.info("Message Sent."); 
+        setAlert(<Alert variant="outlined" severity="success">
+          Message Sent.
+        </Alert>);
         resetForm();
       } else if(response.data.status === 'fail') {
-        alert("Message failed to send.")
+        console.warn("Message failed to send.");
+        setAlert(<Alert variant="outlined" severity="error">
+          Sorry, your message wasn't sent.
+        </Alert>);
       }
     }).catch((err) => {
       console.error(err, "failed message post")
@@ -77,11 +86,11 @@ const Contact = () => {
 
   return <div>
     <Paper className={classes.root} elevation={3} square>
-      <Typography variant="h3" component="h2">Contact</Typography>
+      <Typography align="center" variant="h3" component="h2">Contact</Typography>
       <div style={{ width: '100%' }}>
-        <Box display="flex" flexDirection="row" p={1} m={1} bgcolor="background.paper">
-          <Box p={1} bgcolor="grey.300">
-            <Typography variant="h5" component="h4">I'm Social!</Typography>
+        <Box display="flex" flexDirection="row" p={1} m={1} bgcolor="background.paper" justifyContent="center">
+          <Box p={1} m={1} bgcolor="grey.300">
+            <Typography align="center" variant="h4" component="h4">I'm Social!</Typography>
             <ButtonGroup size="medium">
               <IconButton href="https://www.linkedin.com/in/jessa-daggs/">
                 <LinkedInIcon />
@@ -97,40 +106,35 @@ const Contact = () => {
               </IconButton>
             </ButtonGroup>
           </Box>
-          <Box p={1} bgcolor="grey.300">
-            <Grid item xs>
+          {/* <Box p={1} m={1} bgcolor="grey.300">
+            <Grid item>
               <img src={jessa2} alt="" className="contact-pic"/>
             </Grid>
-          </Box>
+          </Box> */}
         </Box>
       </div>
 
       <Divider variant="middle"/>
-      <div style={{ width: '100%' }}>
-        <Typography variant="h5" component="h4">Let's Connect</Typography>
-        <Box display="flex" flexDirection="row" p={2} bgcolor="background.paper">
+
+      <div style={{ width: '100%', padding: '7px' }}>
+        <Typography align="center" variant="h5" component="h4">Let's Connect</Typography>
+        <Box display="flex" flexDirection="row" p={2} m={1} bgcolor="background.paper" justifyContent="center">
           <Box p={1} bgcolor="grey.300">
-            <form id="contact-form" onSubmit={handleSubmit} method="POST">
+            <form id="contact-form" onSubmit={handleSubmit} autocomplete="off" method="POST">
               <div className="form-group">
-                <label htmlFor="name">Name</label>
-                <input type="text" className="form-control" value={state.name} onChange={onNameChange} />
+                <TextField id="standard-basic" label="Name" value={state.name} onChange={onNameChange} />
               </div>
               <div className="form-group">
-                <label htmlFor="exampleInputEmail1">Email address</label>
-                <input type="email" className="form-control" aria-describedby="emailHelp" value={state.email} onChange={onEmailChange} />
+                <TextField id="standard-basic" label="Email" aria-describedby="emailHelp" value={state.email} onChange={onEmailChange} />
               </div>
               <div className="form-group">
-                <label htmlFor="message">Message</label>
-                <textarea className="form-control" rows="5" value={state.message} onChange={onMessageChange} />
+                <TextField id="filled-multiline-static" label="Message" multiline rows={5} value={state.message} onChange={onMessageChange} />
               </div>
-              <button type="submit" className="btn btn-primary">Submit</button>
+              <div className="form-group">
+                <Button variant="contained" type="submit" >Send</Button>
+                {alert !== null ? alert : null}
+              </div>
             </form>
-            {/* <form noValidate autoComplete="off">
-              <TextField id="standard-basic" label="Name" />
-              <TextField id="standard-basic" label="Email" />
-              <TextField id="filled-multiline-static" label="Message" multiline rows={10}/>
-            </form>
-            <Button variant="contained" onClick={() => { alert('clicked') }}>Send</Button> */}
           </Box>
         </Box>
       </div>
