@@ -27,7 +27,7 @@ const Footer = () => {
         </List> */}
         <Toolbar>
           <Typography color="inherit">
-            Copyright © 2020 JessaDaggs. All Rights Reserved 
+            Copyright © 2020 Jessa Daggs. All Rights Reserved 
           </Typography>
         </Toolbar>
       </Container>

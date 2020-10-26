@@ -1,17 +1,27 @@
-import React from 'react';
-import { makeStyles, useTheme } from '@material-ui/core/styles';
+import React, { useState } from 'react';
+import { makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
-import CardMedia from '@material-ui/core/CardMedia';
+import CardActions from '@material-ui/core/CardActions';
 import Typography from '@material-ui/core/Typography';
+import Divider from '@material-ui/core/Divider';
 
+import AboutContent from './AboutContent.jsx';
 import jessa1 from '../../Brand/jessa1.png';
+import './Home.scss';
 
 const useStyles = makeStyles((theme) => ({
   root: {
     display: 'flex',
     justifyContent: 'center',
-    minWidth: 345,
+  },
+  root2: {
+    minWidth: 275,
+  },
+  bullet: {
+    display: 'inline-block',
+    margin: '0 2px',
+    transform: 'scale(0.8)',
   },
   details: {
     display: 'flex',
@@ -25,30 +35,35 @@ const useStyles = makeStyles((theme) => ({
   }
 }));
 
-
 const Home = () => {
 
   const classes = useStyles();
-  const theme = useTheme();
+  const bull = <span className={classes.bullet}>•</span>;
 
   return <div>
     <div style={{ width: '100%' }}>
       <Card className={classes.root}>
-      <div className={classes.details}>
-        <CardContent className={classes.content}>
-          <Typography align="center" variant="h5" >Jessa Daggs</Typography>
-          <Typography align="center" variant="h5" >Designer/Engineer</Typography>
-          <Typography variant="subtitle1" color="textSecondary">
-            She believed she could so she did.
+        <div className={classes.details}>
+          <CardContent className={classes.content}>
+            <img src={jessa1} className="home-pic"/>
+          </CardContent>
+          <CardContent className={classes.content}>
+            <Typography align="center" variant="h5" >Hi, I'm Jessa Daggs</Typography>
+            <Typography align="center" variant="h5" >UI Designer + Full Stack Engineer</Typography>
+          </CardContent>
+        </div>
+      </Card>
+      <Divider />
+      <Card className={classes.root2} variant="outlined">
+        <CardContent>
+          <Typography variant="h" component="h2" align="center">
+            {bull}About Me{bull}
           </Typography>
+          <AboutContent />
         </CardContent>
-      </div>
-      <CardMedia
-        className={classes.cover}
-        image={jessa1}
-      />
-    </Card>
-
+        <CardActions>
+        </CardActions>
+      </Card>
     </div>
   </div>;
 };

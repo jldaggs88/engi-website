@@ -1,6 +1,7 @@
-import About from '../Content/About.jsx';
-import Home from '../Content/Home.jsx';
-import Projects from '../Content/Projects.jsx';
-import Contact from '../Content/Contact.jsx';
+import About from './AboutPage.jsx';
+import Home from './Home.jsx';
+import Projects from './ProjectsPage.jsx';
+import Contact from './ContactPage.jsx';
+import AboutContent from './AboutContent.jsx';
 
-export { About, Home, Projects, Contact };
+export { About, AboutContent, Home, Projects, Contact };

@@ -86,7 +86,7 @@ const Contact = () => {
 
   return <div>
     <Paper className={classes.root} elevation={3} square>
-      <Typography align="center" variant="h3" component="h2">Contact</Typography>
+      <Typography align="center" variant="h3" component="h2">Contact Me</Typography>
       <div style={{ width: '100%' }}>
         <Box display="flex" flexDirection="row" p={1} m={1} bgcolor="background.paper" justifyContent="center">
           <Box p={1} m={1} bgcolor="grey.300">
@@ -106,11 +106,6 @@ const Contact = () => {
               </IconButton>
             </ButtonGroup>
           </Box>
-          {/* <Box p={1} m={1} bgcolor="grey.300">
-            <Grid item>
-              <img src={jessa2} alt="" className="contact-pic"/>
-            </Grid>
-          </Box> */}
         </Box>
       </div>
 
