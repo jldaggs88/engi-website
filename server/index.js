@@ -68,14 +68,15 @@ router.post('/send', (req, res, next) => {
   })
 })
 
-app.get('/', (req, res) => {
- res.sendFile(HTML_FILE);
-});
-
 app.use(cors());
 app.use(express.static(DIST_DIR));
 app.use(express.json())
-// app.use('/', router);
+app.use('/', router);
+
+app.get('/', (req, res) => {
+  res.sendFile(HTML_FILE);
+});
+ 
 app.listen(3002)
 app.listen(port, function () {
  console.log('App listening on port: ' + port);
