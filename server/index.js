@@ -1,6 +1,6 @@
 const express = require('express');
 const path = require('path');
-// const router = express.Router();
+const router = express.Router();
 const nodemailer = require('nodemailer');
 const cors = require('cors');
 const creds = require('../config.js');
@@ -18,15 +18,15 @@ const transport = {
   }
 }
 
-const transporter = nodemailer.createTransport(transport);
+// const transporter = nodemailer.createTransport(transport);
 
-transporter.verify((error, success) => {
-  if (error) {
-    console.warn(error);
-  } else {
-    console.info('Server set to take messages');
-  }
-});
+// transporter.verify((error, success) => {
+//   if (error) {
+//     console.warn(error);
+//   } else {
+//     console.info('Server set to take messages');
+//   }
+// });
 
 // router.post('/send', (req, res, next) => {
 //   const name = req.body.name
