@@ -4,7 +4,6 @@ const router = express.Router();
 const nodemailer = require('nodemailer');
 const cors = require('cors');
 require('dotenv').config();
-// const creds = require('../config.js');
 
 const app = express();
 const port = process.env.PORT || 3000;

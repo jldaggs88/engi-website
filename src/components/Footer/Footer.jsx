@@ -33,7 +33,7 @@ const Footer = () => {
         </List>
         <Toolbar>
           <Typography variant="body1" color="inherit">
-            © 2020 Jessa Daggs
+            Copyright © 2020 JessaDaggs. All Rights Reserved 
           </Typography>
         </Toolbar>
       </Container>
