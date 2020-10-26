@@ -11,14 +11,14 @@ const port = process.env.PORT || 3000;
 const DIST_DIR = path.join(__dirname, '../dist');
 const HTML_FILE = path.join(DIST_DIR, 'index.html');
 
-// const transport = {
-//   host: 'smtp.gmail.com',
-//   port: 587,
-//   auth: {
-//     user: creds.USER,
-//     pass: creds.PASS
-//   }
-// }
+const transport = {
+  host: 'smtp.gmail.com',
+  port: 587,
+  auth: {
+    user: process.env.USER,
+    pass: process.env.PASS
+  }
+}
 
 // const transporter = nodemailer.createTransport(transport);
 
