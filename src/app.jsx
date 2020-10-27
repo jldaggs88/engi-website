@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import {
   BrowserRouter as Router,
   Switch,
@@ -14,12 +14,14 @@ import { Home, About, Projects, Contact } from './components/Content/index.jsx';
 import Footer from './components/Footer/index.jsx';
 
 const App = () => {
-  const [view, setView] = useState(<Landing />);
+  const [flag, setFlag] = useState(false);
+
+  useEffect(() => setTimeout(()=>setFlag(true), 1000), []);
 
   return (
     <div className="app-container">
-      {view}
-      {setTimeout(() => setView(<div>
+      {flag === false ? <Landing /> :
+      <div>
         <Header />
         <Router>
           <div>
@@ -48,7 +50,7 @@ const App = () => {
           </div>
         </Router>
         <Footer />
-      </div>), 1000)}
+      </div>}
     </div>
   )
 };
