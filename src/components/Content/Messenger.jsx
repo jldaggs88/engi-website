@@ -6,14 +6,26 @@ import TextField from '@material-ui/core/TextField';
 import Box from '@material-ui/core/Box';
 import Alert from '@material-ui/lab/Alert';
 // import { EMAIL_ID, SERVICE_ID, TO_NAME, TEMPLATE_ID } from '../../../env/production.js';
-const EMAIL_ID = process.env.EMAIL_ID;
-const SERVICE_ID = process.env.SERVICE_ID;
-const TO_NAME = process.env.TO_NAME;
-const TEMPLATE_ID = process.env.TEMPLATE_ID;
+
+// const EMAIL_ID = process.env.EMAIL_ID;
+// const SERVICE_ID = process.env.SERVICE_ID;
+// const TO_NAME = process.env.TO_NAME;
+// const TEMPLATE_ID = process.env.TEMPLATE_ID;
+
+var EMAIL_ID, SERVICE_ID, TO_NAME, TEMPLATE_ID;
+
 
 init(EMAIL_ID);
 
 const Messenger = () => {
+  if (process.env.NODE_ENV === 'development') {
+    EMAIL_ID = process.env.EMAIL_ID;
+    SERVICE_ID = process.env.SERVICE_ID;
+    TO_NAME = process.env.TO_NAME;
+    TEMPLATE_ID = process.env.TEMPLATE_ID;
+  } 
+  
+  console.log(EMAIL_ID, SERVICE_ID, TO_NAME, TEMPLATE_ID)
 
   const [state, setState] = useState({
     name: '',
@@ -54,7 +66,6 @@ const Messenger = () => {
   }
 
   return <div>
-    {console.log(EMAIL_ID, SERVICE_ID, TO_NAME, TEMPLATE_ID)}
       <div style={{ width: '100%', padding: '7px' }}>
         <Box display="flex" flexDirection="row" p={2} m={1} bgcolor="background.paper" justifyContent="center">
           <Box p={1} bgcolor="grey.300">
