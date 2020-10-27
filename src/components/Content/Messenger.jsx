@@ -5,14 +5,9 @@ import Button from '@material-ui/core/Button';
 import TextField from '@material-ui/core/TextField';
 import Box from '@material-ui/core/Box';
 import Alert from '@material-ui/lab/Alert';
-// import { EMAIL_ID, SERVICE_ID, TO_NAME, TEMPLATE_ID } from '../../../env/production.js';
 
-// const EMAIL_ID = process.env.EMAIL_ID;
-// const SERVICE_ID = process.env.SERVICE_ID;
-// const TO_NAME = process.env.TO_NAME;
-// const TEMPLATE_ID = process.env.TEMPLATE_ID;
+let EMAIL_ID, SERVICE_ID, TO_NAME, TEMPLATE_ID;
 
-var EMAIL_ID, SERVICE_ID, TO_NAME, TEMPLATE_ID;
 const Messenger = () => {
   if (process.env.NODE_ENV === 'development') {
     EMAIL_ID = process.env.EMAIL_ID;
