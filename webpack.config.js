@@ -12,7 +12,8 @@ module.exports = {
     filename: "[name].js"
   },
   plugins: [
-    new Dotenv(),
+    new Dotenv({
+      path: path.resolve(__dirname, './.env')}),
     htmlPlugin
   ],
   performance: {
