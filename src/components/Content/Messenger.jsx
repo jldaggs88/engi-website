@@ -13,10 +13,6 @@ import Alert from '@material-ui/lab/Alert';
 // const TEMPLATE_ID = process.env.TEMPLATE_ID;
 
 var EMAIL_ID, SERVICE_ID, TO_NAME, TEMPLATE_ID;
-
-
-init(EMAIL_ID);
-
 const Messenger = () => {
   if (process.env.NODE_ENV === 'development') {
     EMAIL_ID = process.env.EMAIL_ID;
@@ -26,6 +22,7 @@ const Messenger = () => {
   } 
   
   console.log(EMAIL_ID, SERVICE_ID, TO_NAME, TEMPLATE_ID)
+  init(EMAIL_ID);
 
   const [state, setState] = useState({
     name: '',
