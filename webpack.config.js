@@ -1,3 +1,4 @@
+const Dotenv = require('dotenv-webpack');
 const HtmlWebPackPlugin = require("html-webpack-plugin");
 const path = require('path');
 const htmlPlugin = new HtmlWebPackPlugin({
@@ -10,7 +11,13 @@ module.exports = {
     path: path.join(__dirname, 'dist'),
     filename: "[name].js"
   },
-  plugins: [htmlPlugin],
+  plugins: [
+    new Dotenv(),
+    htmlPlugin
+  ],
+  performance: {
+    hints: false
+  },
   module: {
     rules: [
       {
@@ -30,5 +37,5 @@ module.exports = {
         options: { name: '/static/[name].[ext]' }
       }
     ]
-  }
+  },
 };

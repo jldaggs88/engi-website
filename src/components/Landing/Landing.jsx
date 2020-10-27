@@ -1,8 +1,6 @@
 import React from 'react';
 import jd from '../../Brand/jd.png';
 
-import App from '../../app.jsx';
-
 const Landing = () => {
 
   return <div>
