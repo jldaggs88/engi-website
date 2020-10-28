@@ -10,12 +10,17 @@ import Alert from '@material-ui/lab/Alert';
 let EMAIL_ID, SERVICE_ID, TO_NAME, TEMPLATE_ID;
 
 const Messenger = () => {
-  // if (process.env.NODE_ENV === 'development') {
+  if (process.env.NODE_ENV === 'development') {
     EMAIL_ID = process.env.EMAIL_ID;
     SERVICE_ID = process.env.SERVICE_ID;
     TO_NAME = process.env.TO_NAME;
     TEMPLATE_ID = process.env.TEMPLATE_ID;
-  // } 
+  } else if(process.env.NODE_ENV === 'production') {
+    EMAIL_ID = EMAIL_ID;
+    SERVICE_ID = SERVICE_ID;
+    TO_NAME = TO_NAME;
+    TEMPLATE_ID = TEMPLATE_ID;
+  }
   
   console.log(EMAIL_ID, SERVICE_ID, TO_NAME, TEMPLATE_ID)
   init(EMAIL_ID);
