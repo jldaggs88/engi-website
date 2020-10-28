@@ -14,9 +14,7 @@ module.exports = {
     filename: "[name].js"
   },
   plugins: [
-    new Dotenv({
-      path: path.resolve(__dirname, './.env')
-    }),
+    new Dotenv(),
     // new webpack.DefinePlugin({
     //   'process.env.EMAIL_ID': JSON.stringify(process.env.EMAIL_ID),
     //   'process.env.SERVICE_ID': JSON.stringify(process.env.SERVICE_ID),
