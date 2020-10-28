@@ -1,4 +1,4 @@
-const Dotenv = require('dotenv-webpack');
+const webpack = require('webpack');
 
 const HtmlWebPackPlugin = require("html-webpack-plugin");
 const path = require('path');
@@ -8,13 +8,20 @@ const htmlPlugin = new HtmlWebPackPlugin({
 });
 module.exports = {
   entry: "./src/index.js",
-  mode: 'development',
+  mode: 'production',
   output: {
     path: path.join(__dirname, 'dist'),
     filename: "[name].js"
   },
   plugins: [
-    new Dotenv(),
+    new webpack.DefinePlugin({
+      'process.env': {
+        'EMAIL_ID': JSON.stringify(process.env.EMAIL_ID),
+        'SERVICE_ID': JSON.stringify(process.env.SERVICE_ID),
+        'TO_NAME': JSON.stringify(process.env.TO_NAME),
+        'TEMPLATE_ID': JSON.stringify(process.env.TEMPLATE_ID)         
+      }
+    }),
     htmlPlugin
   ],
   performance: {

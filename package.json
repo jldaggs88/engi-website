@@ -7,10 +7,10 @@
     "start": "node server/index.js",
     "dev": "webpack --mode development && node server/index.js",
     "build": "webpack --mode production",
+    "heroku-postbuild": "webpack --config webpack.prod.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "heroku-run-build-script": true
-  ,
+  "heroku-run-build-script": true,
   "author": "Jessa Daggs",
   "license": "ISC",
   "dependencies": {
@@ -18,7 +18,6 @@
     "@material-ui/icons": "^4.9.1",
     "@material-ui/lab": "^4.0.0-alpha.56",
     "cors": "^2.8.5",
-    "dotenv-webpack": "^4.0.0",
     "emailjs-com": "^2.6.3",
     "express": "^4.17.1",
     "react": "^17.0.0",
@@ -34,6 +33,8 @@
     "@babel/preset-react": "^7.12.1",
     "babel-loader": "^8.1.0",
     "css-loader": "^5.0.0",
+    "dotenv": "^8.2.0",
+    "dotenv-webpack": "^4.0.0",
     "eslint": "^7.2.0",
     "eslint-config-airbnb": "^18.2.0",
     "eslint-plugin-import": "^2.22.1",
