@@ -17,12 +17,12 @@ module.exports = {
     new Dotenv({
       path: path.resolve(__dirname, './.env')
     }),
-    new webpack.DefinePlugin({
-      'process.env.EMAIL_ID': JSON.stringify(process.env.EMAIL_ID),
-      'process.env.SERVICE_ID': JSON.stringify(process.env.SERVICE_ID),
-      'process.env.TO_NAME': JSON.stringify(process.env.TO_NAME),
-      'process.env.TEMPLATE_ID': JSON.stringify(process.env.TEMPLATE_ID)      
-    }),
+    // new webpack.DefinePlugin({
+    //   'process.env.EMAIL_ID': JSON.stringify(process.env.EMAIL_ID),
+    //   'process.env.SERVICE_ID': JSON.stringify(process.env.SERVICE_ID),
+    //   'process.env.TO_NAME': JSON.stringify(process.env.TO_NAME),
+    //   'process.env.TEMPLATE_ID': JSON.stringify(process.env.TEMPLATE_ID)      
+    // }),
     htmlPlugin
   ],
   performance: {
