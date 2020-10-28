@@ -12,7 +12,7 @@ module.exports = {
     filename: "[name].js"
   },
   plugins: [
-    new Dotenv(),
+    new Dotenv(), //for production
     htmlPlugin
   ],
   performance: {
