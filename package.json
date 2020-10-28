@@ -7,9 +7,10 @@
     "start": "node server/index.js",
     "dev": "webpack --mode development && node server/index.js",
     "build": "webpack --mode production",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install && npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "heroku-run-build-script": true
+  ,
   "author": "Jessa Daggs",
   "license": "ISC",
   "dependencies": {
