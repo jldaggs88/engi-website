@@ -41,12 +41,10 @@ const Messenger = () => {
       TEMPLATE_ID,
       templateParams,
     ).then(function(response) {
-      console.log('SUCCESS!', response.status, response.text);
       setAlert(<Alert variant="outlined" severity="success">
         Message Sent.
       </Alert>);
    }, function(error) {
-      console.log('FAILED...', error);
       setAlert(<Alert variant="outlined" severity="error">
         Sorry, your message wasn't sent.
       </Alert>);
