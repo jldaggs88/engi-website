@@ -2,6 +2,7 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
   Helvetica, Roboto, Arial, sans-serif;
   padding: 2%;
+  height: 98%;
 }
 
 .landing-container{
@@ -9,6 +10,8 @@ body {
 }
 
 .landing {
-  height: 550px;
+  padding: 100px;
+  height: 390px;
+  width: 830px;
   border: 4px solid rgba(255, 0, 0, .5);
 }

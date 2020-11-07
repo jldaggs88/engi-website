@@ -17,7 +17,6 @@ const Project = ({ item, index }) => {
         backgroundRepeat: 'no-repeat',
         backgroundPosition: 'center',
         height: '400px', 
-        backgroundSize: 'auto'
       }}
       className="Project"
       elevation={10}
