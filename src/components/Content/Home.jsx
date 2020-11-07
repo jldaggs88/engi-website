@@ -7,7 +7,7 @@ import Typography from '@material-ui/core/Typography';
 import Divider from '@material-ui/core/Divider';
 
 import AboutContent from './AboutContent.jsx';
-import ProjectContent from './ProjectsContent.jsx';
+import CarouselView from './CarouselView.jsx';
 import SocialButtons from './SocialButtons.jsx';
 import Messenger from './Messenger.jsx';
 import jessa1 from '../../Brand/jessa1.png';
@@ -51,7 +51,6 @@ const Home = () => {
             <img src={jessa1} className="home-pic"/>
           </CardContent>
           <CardContent className={classes.content}>
-            {/* <Typography align="center" variant="h3" >Jessa Daggs</Typography> */}
             <Typography align="center" variant="h5" >UI Designer + Full Stack Engineer</Typography>
             <SocialButtons />
           </CardContent>
@@ -60,8 +59,8 @@ const Home = () => {
       <Divider />
       <Card className={classes.root2} variant="outlined">
         <CardContent>
-          <Typography variant="h" component="h2" align="center">
-            {bull}About Me{bull}
+          <Typography align="center" variant="h5">
+            About Me
           </Typography>
           <AboutContent />
         </CardContent>
@@ -71,10 +70,10 @@ const Home = () => {
       <Divider />
       <Card className={classes.root2} variant="outlined">
         <CardContent>
-          <Typography variant="h" component="h2" align="center">
-            {bull}Projects{bull}
+          <Typography align="center" variant="h5">
+            Projects
           </Typography>
-          <ProjectContent />
+          <CarouselView />
         </CardContent>
         <CardActions>
         </CardActions>
@@ -82,8 +81,8 @@ const Home = () => {
       <Divider />
       <Card className={classes.root2} variant="outlined">
         <CardContent>
-          <Typography variant="h" component="h2" align="center">
-              {bull}Let's Work Together!{bull}
+          <Typography align="center" variant="h5">
+            Let's Work Together!
           </Typography>
           <Messenger />
         </CardContent>

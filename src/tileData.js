@@ -1,23 +1,27 @@
 import trvl from './Brand/trvl.png';
+import TRIVI from './Brand/TRIVI.png';
 
 export const tileData = [
   {
     img: trvl,
-    title: 'Image',
-    description: 'author',
-    Name: "application here",
+    title: 'Collaborative Travel Planner',
+    description: 'Collaborative travel planning application',
+    name: "TRVL",
     contentPosition: "left",
+    color: "#3c3c74"
   },{
-    img: trvl,
-    title: 'Image',
-    description: 'author',
-    Name: "application here",
+    img: TRIVI,
+    title: 'Trivia Trainer',
+    description: 'Trivia training application',
+    name: "TRIVI",
     contentPosition: "middle",
-  },{
-    img: trvl,
-    title: 'Image',
-    description: 'author',
-    Name: "application here",
-    contentPosition: "right",
+    color: "#73ca9b"
   },
+  // {
+  //   img: trvl,
+  //   title: 'Image',
+  //   description: 'author',
+  //   Name: "application here",
+  //   contentPosition: "right",
+  // },
 ];

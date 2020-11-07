@@ -1,20 +1,35 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-
-import Container from '@material-ui/core/Container';
-import Avatar from '@material-ui/core/Avatar';
+import { makeStyles } from '@material-ui/core/styles';
 import Toolbar from '@material-ui/core/Toolbar';
 
-import jd from '../../Brand/jd.png';
+import jessad from '../../Brand/jessad.png';
 
+const useStyles = makeStyles(theme => ({
+  marginAutoContainer: {
+    width: 500,
+    height: 80,
+    display: 'flex',
+    backgroundColor: 'gold',
+  },
+  marginAutoItem: {
+    margin: 'auto'
+  },
+  alignItemsAndJustifyContent: {
+    width: '100%',
+    height: '90%',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+}))
 
 const Header = () => {
+  const classes = useStyles();
+
   return <div>
-    <Container>
-      <Toolbar>
-        <Avatar alt="jd.logo" src={jd} />
-      </Toolbar>
-    </Container>
+    <Toolbar className={classes.alignItemsAndJustifyContent} >
+      <img src={jessad} className="namebanner"/>
+    </Toolbar>
   </div>;
 };
 

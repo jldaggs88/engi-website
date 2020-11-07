@@ -1,13 +1,11 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
-import Divider from '@material-ui/core/Divider';
 import Box from '@material-ui/core/Box';
 import Typography from '@material-ui/core/Typography';
 
 import SocialButtons from './SocialButtons.jsx';
 import Messenger from './Messenger.jsx';
-import './Contact.scss';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -35,10 +33,7 @@ const Contact = () => {
           </Box>
         </Box>
       </div>
-
-      <Divider variant="middle"/>
       <Typography align="center" variant="h5" component="h4">Connect With Me</Typography>
-
       <Messenger />
     </Paper>
   </div>;

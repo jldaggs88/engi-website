@@ -25,14 +25,14 @@ const App = () => {
         <Header />
         <Router>
           <div>
-          <BottomNavigation
-            showLabels
-          >
-            <BottomNavigationAction component={Link} to="/" label="Home" />
-            <BottomNavigationAction component={Link} to="/about" label="About" />
-            <BottomNavigationAction component={Link} to="/projects" label="Projects" />
-            <BottomNavigationAction component={Link} to="/contact" label="Contact" />
-          </BottomNavigation>
+            <BottomNavigation
+              showLabels
+            >
+              <BottomNavigationAction component={Link} to="/" label="Home" />
+              <BottomNavigationAction component={Link} to="/about" label="About" />
+              <BottomNavigationAction component={Link} to="/projects" label="Projects" />
+              <BottomNavigationAction component={Link} to="/contact" label="Contact" />
+            </BottomNavigation>
             <Switch>
               <Route path="/about">
                 <About />

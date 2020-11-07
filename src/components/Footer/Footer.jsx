@@ -1,36 +1,28 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-
+import { makeStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
 import Container from '@material-ui/core/Container';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
-// import List from '@material-ui/core/List';
-// import ListItem from '@material-ui/core/ListItem';
-// import ListItemIcon from '@material-ui/core/ListItemIcon';
-// import MailOutlineIcon from '@material-ui/icons/MailOutline';
-// import PhoneIphoneIcon from '@material-ui/icons/PhoneIphone';
 
-// import './styles/styles.scss';
+const useStyles = makeStyles(theme => ({
+  marginAutoContainer: {
+    backgroundColor: '#F9A896',
+    alignItems: 'center',
+    justifyContent: 'center',
+  }
+}));
 
 const Footer = () => {
+  const classes = useStyles();
+
   return <div>
-    <AppBar position="static" color="primary">
-      <Container>
-        {/* <List>
-          <ListItem>
-            <ListItemIcon>
-              <MailOutlineIcon />
-            </ListItemIcon>
-            <a href="mailto:daggs.jessa@gmail.com">daggs.jessa@gmail.com</a>
-          </ListItem>
-        </List> */}
-        <Toolbar>
-          <Typography color="inherit">
-            Copyright © 2020 Jessa Daggs. All Rights Reserved 
-          </Typography>
-        </Toolbar>
-      </Container>
+    <AppBar position="static">
+      <Toolbar className={classes.marginAutoContainer}>
+        <Typography color="inherit">
+          Copyright © 2020 Jessa Daggs. All Rights Reserved. 
+        </Typography>
+      </Toolbar>
     </AppBar>
   </div>;
 };

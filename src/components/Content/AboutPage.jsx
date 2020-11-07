@@ -6,12 +6,9 @@ import AboutContent from './AboutContent.jsx';
 const About = () => {
 
   return <div>
-    <Typography align="center" variant="h3" component="h2">About Me</Typography>
+    <Typography align="center" variant="h3" component="h2">About</Typography>
     <div style={{ width: '100%' }}>
       <AboutContent />
-      <div>Skills & Experience</div>
-      <div>dsf.ljsfkn;sdlfnsd</div>
-      {/* <div>Giving Back</div> */}
     </div>
   </div>;
 };

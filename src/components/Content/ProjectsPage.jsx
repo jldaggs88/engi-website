@@ -1,12 +1,12 @@
 import React from 'react';
 import Typography from '@material-ui/core/Typography';
 
-import ProjectsContent from './ProjectsContent.jsx';
+import ProjectsView from './ProjectsView.jsx';
 
 const Projects = () => {
   return <div>
-    <Typography align="center" variant="h3" component="h2">My Lastest Work</Typography>
-    <ProjectsContent />
+    <Typography align="center" variant="h3" component="h2">Projects</Typography>
+    <ProjectsView />
   </div>;
 };
 

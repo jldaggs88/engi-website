@@ -54,24 +54,22 @@ const Messenger = () => {
 
   return <div>
       <div style={{ width: '100%', padding: '7px' }}>
-        <Box display="flex" flexDirection="row" p={2} m={1} bgcolor="background.paper" justifyContent="center">
-          <Box p={1} bgcolor="grey.300">
-            <form id="contact-form" onSubmit={handleSubmit} autocomplete="off" method="POST">
-              <div className="form-group">
-                <TextField id="standard-basic" label="Name" value={state.name} onChange={ ()=>{setState({...state, name: event.target.value})} }/>
-              </div>
-              <div className="form-group">
-                <TextField id="standard-basic" label="Email" aria-describedby="emailHelp" value={state.email} onChange={()=>{setState({...state, email: event.target.value})}} />
-              </div>
-              <div className="form-group">
-                <TextField id="filled-multiline-static" label="Message" multiline rows={5} value={state.message} onChange={()=>{setState({...state, message: event.target.value})} }/>
-              </div>
-              <div className="form-group">
-                <Button variant="contained" type="submit" >Send</Button>
-                {alert !== null ? alert : null}
-              </div>
-            </form>
-          </Box>
+        <Box display="flex" flexDirection="row" p={2} m={1} justifyContent="center">
+          <form id="contact-form" onSubmit={handleSubmit} method="POST">
+            <div className="form-group">
+              <TextField  label="Name" value={state.name} onChange={ (event)=>{setState({...state, name: event.target.value})} }/>
+            </div>
+            <div className="form-group">
+              <TextField  label="Email" value={state.email} onChange={(event)=>{setState({...state, email: event.target.value})}} />
+            </div>
+            <div className="form-group">
+              <TextField label="Message" multiline rows={5} value={state.message} onChange={(event)=>{setState({...state, message: event.target.value})} }/>
+            </div>
+            <div className="form-group">
+              <Button variant="contained" type="submit" >Send</Button>
+              {alert !== null ? alert : null}
+            </div>
+          </form>
         </Box>
       </div>
   </div>;

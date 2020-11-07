@@ -10,8 +10,13 @@ import dev from '../../icons/dev.png';
 
 const SocialButtons = () => {
 
-  return <div style={{justifyContent: 'center'}}>
-    <Box p={1} m={1} bgcolor="grey.300">
+  return <div >
+    <Box
+      p={1} m={1}
+      display='flex'
+      alignItems='center'
+      justifyContent='center'
+    >
       <ButtonGroup size="medium">
         <IconButton href="https://www.linkedin.com/in/jessa-daggs/">
           <LinkedInIcon />
