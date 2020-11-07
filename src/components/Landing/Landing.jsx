@@ -1,12 +1,10 @@
 import React from 'react';
-import jd from '../../Brand/jd.png';
+import landing from '../../Brand/landing.gif';
 
 const Landing = () => {
 
-  return <div>
-    <img src={jd} atl="" className="logo"/>
-    <div>Jessa Daggs</div>
-    <div>Designer + Engineer</div>
+  return <div className="landing-container">
+    <img src={landing} atl="" className="landing"/>
   </div>;
 };
 

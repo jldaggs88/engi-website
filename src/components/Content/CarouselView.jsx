@@ -10,7 +10,16 @@ import { tileData } from '../../tileData.js';
 const Project = ({ item, index }) => {
 
   return (
-    <Paper key={index} style={{ backgroundImage: `url(${item.img})`, backgroundRepeat: 'no-repeat', backgroundPosition: 'center', height: '400px' }} className="Project"
+    <Paper 
+      key={index} 
+      style={{
+        backgroundImage: `url(${item.img})`,
+        backgroundRepeat: 'no-repeat',
+        backgroundPosition: 'center',
+        height: '400px', 
+        backgroundSize: 'auto'
+      }}
+      className="Project"
       elevation={10}
     >
     </Paper>
@@ -27,7 +36,7 @@ const CarouselView = () => {
   })
 
   return (
-    <div style={{ marginTop: "50px" }}>
+    <div>
       <Carousel
         className="ProjectCarousel"
         autoPlay={state.autoPlay}

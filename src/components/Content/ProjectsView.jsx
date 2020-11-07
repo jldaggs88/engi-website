@@ -70,7 +70,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const ProjectsView = () => {
+const ProjectsView = ({ handleToggle }) => {
   const classes = useStyles();
 
   return (
@@ -81,6 +81,7 @@ const ProjectsView = () => {
           key={project.title}
           className={classes.image}
           focusVisibleClassName={classes.focusVisible}
+          onClick={handleToggle}
         >
           <span
             className={classes.imageSrc}

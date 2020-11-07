@@ -16,7 +16,7 @@ import Footer from './components/Footer/index.jsx';
 const App = () => {
   const [flag, setFlag] = useState(false);
 
-  useEffect(() => setTimeout(()=>setFlag(true), 1000), []);
+  useEffect(() => setTimeout(()=>setFlag(true), 3000), []);
 
   return (
     <div className="app-container">

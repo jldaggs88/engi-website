@@ -1,5 +1,6 @@
 import trvl from './Brand/trvl.png';
 import TRIVI from './Brand/TRIVI.png';
+import landingicon from './Brand/landingicon.png';
 
 export const tileData = [
   {
@@ -17,11 +18,12 @@ export const tileData = [
     contentPosition: "middle",
     color: "#73ca9b"
   },
-  // {
-  //   img: trvl,
-  //   title: 'Image',
-  //   description: 'author',
-  //   Name: "application here",
-  //   contentPosition: "right",
-  // },
+  {
+    img: landingicon,
+    title: 'Online Portfolio',
+    description: 'blah blah blah',
+    name: "JessaDaggs.com",
+    contentPosition: "right",
+    color: "#ffc4bc"
+  },
 ];
