@@ -10,14 +10,14 @@ import dev from '../../icons/dev.png';
 
 const SocialButtons = () => {
 
-  return <div >
+  return <div>
     <Box
       p={1} m={1}
       display='flex'
       alignItems='center'
       justifyContent='center'
     >
-      <ButtonGroup size="medium">
+      <ButtonGroup>
         <IconButton href="https://www.linkedin.com/in/jessa-daggs/">
           <LinkedInIcon />
         </IconButton>

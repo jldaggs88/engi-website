@@ -4,7 +4,7 @@ import Favicon from 'react-favicon';
 
 import App from '../src/app.jsx';
 import jd from '../src/Brand/jd.png';
-import './styles.scss';
+import './styles.css';
 
 const Index = () => {
   return (

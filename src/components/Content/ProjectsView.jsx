@@ -2,9 +2,6 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import ButtonBase from '@material-ui/core/ButtonBase';
 import Typography from '@material-ui/core/Typography';
-import { tileData } from '../../tileData.js';
-
-const projects = tileData;
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -70,7 +67,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const ProjectsView = ({ handleToggle }) => {
+const ProjectsView = ({ handleToggle, projects }) => {
   const classes = useStyles();
 
   return (

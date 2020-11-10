@@ -25,7 +25,7 @@ const Contact = () => {
   return <div>
     <Paper className={classes.root} elevation={3} square>
       <Typography align="center" variant="h3" component="h2">Contact</Typography>
-      <div style={{ width: '100%' }}>
+      <div className="contact">
         <Box display="flex" flexDirection="row" p={1} m={1} bgcolor="background.paper" justifyContent="center">
           <Box p={1} m={1} bgcolor="grey.300">
             <Typography align="center" variant="h4" component="h4">I'm Social!</Typography>

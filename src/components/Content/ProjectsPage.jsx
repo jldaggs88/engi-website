@@ -5,6 +5,9 @@ import Modal from '@material-ui/core/Modal';
 
 import ProjectsView from './ProjectsView.jsx';
 import DemoView from './DemoView.jsx';
+import { tileData } from '../../tileData.js';
+
+const projects = tileData;
 
 const useStyles = makeStyles((theme) => ({
 
@@ -27,14 +30,14 @@ const Projects = () => {
 
   return <div>
     <Typography align="center" variant="h3" component="h2">Projects</Typography>
-    <ProjectsView handleToggle={handleToggle} />
+    <ProjectsView handleToggle={handleToggle} projects={projects} />
     <Modal
       open={open}
       onClose={handleClose}
       aria-labelledby="modal-project-demo"
       aria-describedby="description"
     >
-      {<DemoView demo={demo} />}
+      {<DemoView demo={demo} projects={projects} />}
     </Modal>
   </div>;
 };

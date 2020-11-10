@@ -11,7 +11,6 @@ import CarouselView from './CarouselView.jsx';
 import SocialButtons from './SocialButtons.jsx';
 import Messenger from './Messenger.jsx';
 import jessa1 from '../../Brand/jessa1.png';
-import './Home.scss';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -44,7 +43,7 @@ const Home = () => {
   const bull = <span className={classes.bullet}>•</span>;
 
   return <div>
-    <div style={{ width: '100%' }}>
+    <div>
       <Card className={classes.root}>
         <div className={classes.details}>
           <CardContent className={classes.content}>

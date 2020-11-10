@@ -1,9 +1,6 @@
 import React, { useState } from 'react';
 import Carousel from 'react-material-ui-carousel';
-import {
-  Paper,
-  Button,
-} from '@material-ui/core';
+import Paper from '@material-ui/core/Paper';
 
 import { tileData } from '../../tileData.js';
 

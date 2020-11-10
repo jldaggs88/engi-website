@@ -7,7 +7,7 @@ const About = () => {
 
   return <div>
     <Typography align="center" variant="h3" component="h2">About</Typography>
-    <div style={{ width: '100%' }}>
+    <div className="about-page">
       <AboutContent />
     </div>
   </div>;
