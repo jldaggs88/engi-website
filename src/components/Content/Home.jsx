@@ -50,7 +50,7 @@ const Home = () => {
             <img src={jessa1} className="home-pic"/>
           </CardContent>
           <CardContent className={classes.content}>
-            <Typography align="center" variant="h5" >UI Designer + Full Stack Engineer</Typography>
+            <Typography align="center" variant="h5" >UI Designer + Software Engineer</Typography>
             <SocialButtons />
           </CardContent>
         </div>
