@@ -39,7 +39,7 @@ export const tileData = [
     name: "TRIVI",
     contentPosition: "middle",
     color: "#73ca9b",
-    pngs: [triviLanding, triviQuestion, triviQuestion, triviScore],
+    pngs: [triviLanding, triviQuestion, triviScore],
     tech: trivits
   },{
     img: jdCom,
