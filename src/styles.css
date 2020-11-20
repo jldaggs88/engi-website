@@ -31,10 +31,18 @@ body {
 }
 
 .demo-container {
-  width: fit-content;
   margin: auto;
   padding: 10%;
   background-color: linen;
+
+  width: 50%;
+  margin: auto;
+  padding: 10%;
+  background-color: linen;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .about-page {
@@ -43,7 +51,13 @@ body {
 
 .outer {
   display: table;
-  width: -webkit-fill-available;
+  margin: auto;
+  padding: 10%;
+  background-color: linen;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .demo-carousel {
