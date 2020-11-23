@@ -31,14 +31,14 @@ const Projects = () => {
   return <div>
     <Typography align="center" variant="h3" component="h2">Projects</Typography>
     <ProjectsView handleToggle={handleToggle} projects={projects} />
-    <Modal
+    {/* <Modal
       open={open}
       onClose={handleClose}
       aria-labelledby="modal-project-demo"
       aria-describedby="description"
-    >
-      {<DemoView demo={demo} projects={projects} />}
-    </Modal>
+    > */}
+      {/* {<DemoView demo={demo} projects={projects} />} */}
+    {/* </Modal> */}
   </div>;
 };
 

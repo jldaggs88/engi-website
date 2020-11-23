@@ -18,7 +18,7 @@ export const tileData = [
   {
     img: trvl,
     title: 'Collaborative Travel Planner',
-    description: ["Mobile first applications that enhances the travel planning experience.",  `Plan Trips,
+    description: ["A mobile app that enhances group travel planning experience.",  `Plan Trips,
       Get Budget-Friendly
       Flight & Hotel Prices,
       Book Lodging,
@@ -35,7 +35,7 @@ export const tileData = [
   },{
     img: TRIVI,
     title: 'Trivia Trainer',
-    description: ['A mobile-first trivia training application designed for winners!', "Play Two Rounds of Trivi, See Score"],
+    description: ['A trivia training app designed for winners!', "Play Two Rounds of Trivi, See Score"],
     name: "TRIVI",
     contentPosition: "middle",
     color: "#73ca9b",

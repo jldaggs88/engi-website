@@ -66,26 +66,6 @@ body {
 
 }
 
-.png {
-  height: 450px;
-  display: table-cell;
-}
-
-.description-title {
-  display: table-cell;
-  vertical-align: middle;
-  width: 300px;
-  font-size: medium;
-}
-
-.project-description {
-  vertical-align: bottom;
-}
-
-.project-tech {
-  height: 200px;
-}
-
 .contact {
   width: 100%
 }

@@ -43,52 +43,50 @@ const Home = () => {
   const bull = <span className={classes.bullet}>•</span>;
 
   return <div>
-    <div>
-      <Card className={classes.root}>
-        <div className={classes.details}>
-          <CardContent className={classes.content}>
-            <img src={jessa1} className="home-pic"/>
-          </CardContent>
-          <CardContent className={classes.content}>
-            <Typography align="center" variant="h5" >UI Designer + Software Engineer</Typography>
-            <SocialButtons />
-          </CardContent>
-        </div>
-      </Card>
-      <Divider />
-      <Card className={classes.root2} variant="outlined">
-        <CardContent>
-          <Typography align="center" variant="h5">
-            About Me
-          </Typography>
-          <AboutContent />
+    <Card className={classes.root}>
+      <div className={classes.details}>
+        <CardContent className={classes.content}>
+          <img src={jessa1} className="home-pic"/>
         </CardContent>
-        <CardActions>
-        </CardActions>
-      </Card>
-      <Divider />
-      <Card className={classes.root2} variant="outlined">
-        <CardContent>
-          <Typography align="center" variant="h5">
-            Projects
-          </Typography>
-          <CarouselView />
+        <CardContent className={classes.content}>
+          <Typography align="center" variant="h5" >UI Designer + Software Engineer</Typography>
+          <SocialButtons />
         </CardContent>
-        <CardActions>
-        </CardActions>
-      </Card>
-      <Divider />
-      <Card className={classes.root2} variant="outlined">
-        <CardContent>
-          <Typography align="center" variant="h5">
-            Let's Work Together!
-          </Typography>
-          <Messenger />
-        </CardContent>
-        <CardActions>
-        </CardActions>
-      </Card>
-    </div>
+      </div>
+    </Card>
+    <Divider />
+    <Card className={classes.root2} variant="outlined">
+      <CardContent>
+        <Typography align="center" variant="h5">
+          About Me
+        </Typography>
+        <AboutContent />
+      </CardContent>
+      <CardActions>
+      </CardActions>
+    </Card>
+    <Divider />
+    <Card className={classes.root2} variant="outlined">
+      <CardContent>
+        <Typography align="center" variant="h5">
+          Projects
+        </Typography>
+        <CarouselView />
+      </CardContent>
+      <CardActions>
+      </CardActions>
+    </Card>
+    <Divider />
+    <Card className={classes.root2} variant="outlined">
+      <CardContent>
+        <Typography align="center" variant="h5">
+          Let's Work Together!
+        </Typography>
+        <Messenger />
+      </CardContent>
+      <CardActions>
+      </CardActions>
+    </Card>
   </div>;
 };
 
