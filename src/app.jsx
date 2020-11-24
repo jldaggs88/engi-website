@@ -34,16 +34,16 @@ const App = () => {
               <BottomNavigationAction component={Link} to="/contact" label="Contact" />
             </BottomNavigation>
             <Switch>
-              <Route path="/#/about">
+              <Route path="/about">
                 <About />
               </Route>
-              <Route path="/#/projects">
+              <Route path="/projects">
                 <Projects />
               </Route>
-              <Route path="/#/contact">
+              <Route path="/contact">
                 <Contact />
               </Route>
-              <Route path="/#/">
+              <Route path="/">
                 <Home />
               </Route>
             </Switch>
