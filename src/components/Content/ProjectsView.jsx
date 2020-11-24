@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
+import Chip from '@material-ui/core/Chip';
 
 import CaseStudy from './CaseStudy.jsx';
 
-const ProjectsView = ({ handleToggle, projects }) => {
+const ProjectsView = ({ projects }) => {
 
   const [view, setView] = useState(null);
 
@@ -30,9 +31,7 @@ const ProjectsView = ({ handleToggle, projects }) => {
               </Typography>
               <div className="roles">
                 {project.roles.map((role, index)=>{
-                  return <div key={`role=${index}`}>
-                    {role}
-                  </div>
+                  return <Chip variant="outlined" size="small" key={`role=${index}`} label={role} />
                 })}
               </div>
               { project.case !== null ? <Button aria-label={project.name} size="small" color="primary" onClick={renderView}>

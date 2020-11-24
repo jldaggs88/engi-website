@@ -10,7 +10,8 @@ import AboutContent from './AboutContent.jsx';
 import CarouselView from './CarouselView.jsx';
 import SocialButtons from './SocialButtons.jsx';
 import Messenger from './Messenger.jsx';
-import ProjectsView from './ProjectsView.jsx';
+// import ProjectsView from './ProjectsView.jsx';
+import ProjectsPage from './ProjectsPage.jsx';
 import jessa1 from '../../Brand/jessa1.png';
 
 const useStyles = makeStyles((theme) => ({
@@ -21,13 +22,6 @@ const useStyles = makeStyles((theme) => ({
   },
   root2: {
     minWidth: 275,
-    // backgroundColor: '#ffc4bc'
-
-  },
-  bullet: {
-    display: 'inline-block',
-    margin: '0 2px',
-    transform: 'scale(0.8)',
   },
   details: {
     display: 'flex',
@@ -75,7 +69,7 @@ const Home = () => {
         <Typography align="center" variant="h5">
           Projects
         </Typography>
-        {/* <ProjectsView /> */}
+        {/* <ProjectsPage /> */}
         {/* <CarouselView /> */}
       </CardContent>
       <CardActions>
