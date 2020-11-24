@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
-import Modal from '@material-ui/core/Modal';
+// import Modal from '@material-ui/core/Modal';
 
 import ProjectsView from './ProjectsView.jsx';
-import DemoView from './DemoView.jsx';
+// import DemoView from './DemoView.jsx';
 import { tileData } from '../../tileData.js';
 
 const projects = tileData;
@@ -18,9 +18,9 @@ const Projects = () => {
   const [open, setOpen] = useState(false);
   const [demo, setDemo] = useState(null);
 
-  const handleClose = () => {
-    setOpen(false);
-  };
+  // const handleClose = () => {
+  //   setOpen(false);
+  // };
 
   const handleToggle = () => {
     setOpen(!open);

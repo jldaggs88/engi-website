@@ -11,6 +11,7 @@ import CarouselView from './CarouselView.jsx';
 import SocialButtons from './SocialButtons.jsx';
 import Messenger from './Messenger.jsx';
 import jessa1 from '../../Brand/jessa1.png';
+// import ProjectsView from './ProjectsView.jsx';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -71,6 +72,7 @@ const Home = () => {
         <Typography align="center" variant="h5">
           Projects
         </Typography>
+        {/* <ProjectsView /> */}
         <CarouselView />
       </CardContent>
       <CardActions>
