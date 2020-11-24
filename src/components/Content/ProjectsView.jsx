@@ -14,7 +14,7 @@ const ProjectsView = ({ projects }) => {
       case  "VIEW CASE STUDY":
         return setView(<CaseStudy projects={projects} currentStudy={event.target.parentElement.getAttribute("aria-label")} />);
       default:
-        return <div>
+        return <div className="project-container">
         {projects.map((project, index) => (
           <div key={`project-${index}`}>
             <img

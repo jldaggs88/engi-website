@@ -30,6 +30,10 @@ body {
   transform: translate(-50%, -50%);
 }
 
+.project-container {
+  text-align-last: center;
+}
+
 .demo-container {
   margin: auto;
   padding: 10%;
