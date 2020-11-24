@@ -46,12 +46,12 @@ body {
 }
 
 .about-page {
-  background-image: url('/home/jelds88/engi-website/src/Brand/withPai.png');
+  /* background-image: url('/home/jelds88/engi-website/src/Brand/withPai.png'); */
   width: 100%;
-  background-attachment: fixed;
+  /* background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: top;
+  background-position: top; */
 }
 
 .about-content {
