@@ -11,6 +11,7 @@ app.use(express.static(DIST_DIR));
 app.get('/', (req, res) => {
  res.sendFile(HTML_FILE);
 });
+
 app.listen(port, function () {
  console.log('App listening on port: ' + port);
 });

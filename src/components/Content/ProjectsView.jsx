@@ -31,7 +31,7 @@ const ProjectsView = ({ projects }) => {
               </Typography>
               <div className="roles">
                 {project.roles.map((role, index)=>{
-                  return <Chip variant="outlined" size="small" key={`role=${index}`} label={role} />
+                  return <Chip variant="outlined" size="small"  disabled key={`role=${index}`} label={role} />
                 })}
               </div>
               { project.case !== null ? <Button aria-label={project.name} size="small" color="primary" onClick={renderView}>
