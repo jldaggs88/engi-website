@@ -21,7 +21,7 @@ const useStyles = makeStyles((theme) => ({
   },
   root2: {
     minWidth: 275,
-    backgroundColor: '#ffc4bc'
+    // backgroundColor: '#ffc4bc'
 
   },
   bullet: {

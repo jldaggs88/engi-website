@@ -57,7 +57,7 @@ body {
 .about-content {
   padding: 35px 30px 30px;
   height: 500px;
-  color: white;
+  /* color: white; */
   font-size: 30px;
 }
 
