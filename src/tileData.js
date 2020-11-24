@@ -18,23 +18,32 @@ export const tileData = [
   {
     img: jdCom,
     title: 'Online Portfolio',
-    description: ['An online portfolio to showcase how I work as a designer and engineer.', 'Send instant email, Recent Projects View'],
+    description: [`Online portfolio www.JessaDaggs.com was created to showcase how I work as a designer and engineer.`],
     name: "www.JessaDaggs.com",
     contentPosition: "right",
     color: "#ffc4bc",
     pngs: [jdCom, jdHome],
     tech: jdts,
     case: {
-     problemSummary: `So much to to show, so little time. As a new developer I found that attracting recruiters and showcasing the technological skills
-      I have built came with some challenges. 1. How to demonstrate all the fun things I've learned? 2. How to find my match made in employer heaven?`,
+      caseTitle: [`www.JessaDaggs.com Case Study`, `How & Why I Designed My Online Portfolio`],
+      problemSummary: `So much to to show, so little time. As a new developer I found that attracting recruiters and showcasing the technological skills
+        I have built came with some challenges.`,
+      problems: [`How do I demonstrate all the fun things I've learned?`, `How to find my match made in employer heaven?`],
+      solutions: [`I chose to feature the projects that encompass different aspects of my skills to show my range. I created button links for each project's code and case study.`,
+        `By ensuring my personal brand is communicated through imagery and tone I will attract like-minded organizations. `],
       audience: `This application will be used mainly by recruiters, hiring managers, and fellow designers/developers. The intent is that they use this application to
-      access whether or not they find my style and expertise interesting and a potential asset to their team.`,
+        access whether or not they find my style and expertise interesting and a potential asset to their team.`,
       userTesting: `Feedback from users helped me to determine that the application should include case studies to reflect my design process. 
-      I also learned from users that ability to access the cas studies from the home page would help them to get the information they needed more efficiently. The application nows 
-      reflects these updates to enhance the users over experience.`,
+        I also learned from users that ability to access information directly for the home view would be more efficient. The application now
+        reflects these updates to enhance the users over experience.`,
       outcome: [`Increase my visibility.`, `Show my expertise on the technologies and practices I've used.`,
-      `Establish an online presence.`, `Increase my personal brand.`, `Stand out from the very large pool of candidates.`, `Work directly with users to get more effective engagement.`,
-      `I've created a background of work that will allow me to get my first position in the industry.`]
+        `Establish an online presence.`, `Increase my personal brand.`, `Stand out from the very large pool of candidates.`, `Work directly with users to get more effective engagement.`,
+        `I've created a background of work that will allow me to get my first position in the industry.`],
+      team: `This was a solo passion project.`,
+      discovery: `I created a project scope by analyzing my competition, creating users stories, and determining the message I wanted to convey.`,
+      takeAways: [`1. Design is about discovering the possibilities, not having all the answers.`, `Not having the answer is an opportunity to be creative and get outside of your comfort zone.`,
+        `2. Being a beginner is a lot of fun and you are on the right track!`, `I know you think you're a beginner now but remember you from 6 months ago? Haha, I know I do. Celebrate your wins you! Treat yourself to a mental water break from the marathon.`,
+        `3. Stay curious.`, `Ask questions that help you to be more engaged. Open communication always leads to more effective collaboration. If you feel you are over communicating you probably could use a little more. God is in the details. `]
     },
     roles: ['Front-end Engineer','UI/UX Designer', 'Back-end Engineer'],
   },

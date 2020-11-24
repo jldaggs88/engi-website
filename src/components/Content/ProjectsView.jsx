@@ -11,7 +11,7 @@ const ProjectsView = ({ handleToggle, projects }) => {
   const renderView = () => {
     switch(event.target.innerText) {
       case  "VIEW CASE STUDY":
-        return setView(<CaseStudy currentStudy={event.target.parentElement.getAttribute("aria-label")} />);
+        return setView(<CaseStudy projects={projects} currentStudy={event.target.parentElement.getAttribute("aria-label")} />);
       default:
         return <div>
         {projects.map((project) => (

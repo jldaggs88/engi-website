@@ -1,11 +1,17 @@
 import React from 'react';
 import Typography from '@material-ui/core/Typography';
 
-const CaseStudy = ({ currentStudy }) => {
+const CaseStudy = ({ currentStudy, projects }) => {
 
   return <div>
     <div className="case-study">
-      {console.log(currentStudy)}
+      {projects.map((project)=>{
+        if(currentStudy === project.name){
+          return <div>
+            
+          </div>
+        }
+      })}
     </div>
   </div>;
 };
