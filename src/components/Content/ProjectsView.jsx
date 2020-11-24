@@ -14,8 +14,8 @@ const ProjectsView = ({ handleToggle, projects }) => {
         return setView(<CaseStudy projects={projects} currentStudy={event.target.parentElement.getAttribute("aria-label")} />);
       default:
         return <div>
-        {projects.map((project) => (
-          <div>
+        {projects.map((project, index) => (
+          <div key={`project-${index}`}>
             <img
               alt={project.title}
               src={project.img}
@@ -30,7 +30,7 @@ const ProjectsView = ({ handleToggle, projects }) => {
               </Typography>
               <div className="roles">
                 {project.roles.map((role, index)=>{
-                  return <div>
+                  return <div key={`role=${index}`}>
                     {role}
                   </div>
                 })}
@@ -38,17 +38,13 @@ const ProjectsView = ({ handleToggle, projects }) => {
               { project.case !== null ? <Button aria-label={project.name} size="small" color="primary" onClick={renderView}>
                 View Case Study
               </Button> : null }
-              <Button size="small" color="primary">View Tech Stack</Button>
+              <Button size="small" color="primary" href={project.github}>View on Github</Button>
             </div>
           </div>
         ))}
       </div>;
     }
   }
-
-  // const getTech = () => {
-  //   return <DemoView demo={demo} projects={projects} />
-  // }
 
   return (
     <div>

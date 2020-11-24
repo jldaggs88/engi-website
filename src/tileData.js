@@ -1,6 +1,7 @@
 import trvl from './Brand/trvl.png';
 import TRIVI from './Brand/TRIVI.png';
 import jdCom from './Brand/jdCom.png';
+import jdComUC from './Brand/jdComUC.png';
 import jdts from './Brand/Demos/jdts.png';
 import jdHome from './Brand/Demos/jdHome.png';
 import triviLanding from './Brand/Demos/triviLanding.png';
@@ -18,16 +19,18 @@ export const tileData = [
   {
     img: jdCom,
     title: 'Online Portfolio',
-    description: [`Online portfolio www.JessaDaggs.com was created to showcase how I work as a designer and engineer.`],
+    description: [`JessaDaggs.com was created to showcase how I work as a designer and engineer.`],
     name: "www.JessaDaggs.com",
     contentPosition: "right",
     color: "#ffc4bc",
-    pngs: [jdCom, jdHome],
+    imgs: [jdComUC, jdHome],
     tech: jdts,
+    github: 'https://github.com/jldaggs88/engi-website',
     case: {
-      caseTitle: [`www.JessaDaggs.com Case Study`, `How & Why I Designed My Online Portfolio`],
+      caseTitle: [`www.JessaDaggs.com Case Study`, `Creating a captivating online presence`],
       problemSummary: `So much to to show, so little time. As a new developer I found that attracting recruiters and showcasing the technological skills
-        I have built came with some challenges.`,
+        I have built came with some challenges. JessaDaggs.com is mainly for recruiters that want a living example of my skill set in the most efficient way. While using the application users can connect with me by email and access blogs and code that I have written using the provided quick links. 
+        It is also frequently used by mom to brag to her friends.`,
       problems: [`How do I demonstrate all the fun things I've learned?`, `How to find my match made in employer heaven?`],
       solutions: [`I chose to feature the projects that encompass different aspects of my skills to show my range. I created button links for each project's code and case study.`,
         `By ensuring my personal brand is communicated through imagery and tone I will attract like-minded organizations. `],
@@ -40,10 +43,11 @@ export const tileData = [
         `Establish an online presence.`, `Increase my personal brand.`, `Stand out from the very large pool of candidates.`, `Work directly with users to get more effective engagement.`,
         `I've created a background of work that will allow me to get my first position in the industry.`],
       team: `This was a solo passion project.`,
-      discovery: `I created a project scope by analyzing my competition, creating users stories, and determining the message I wanted to convey.`,
+      discovery: `I created a project scope by analyzing my competition, creating users stories, and determined the message I wanted to convey.`,
       takeAways: [`1. Design is about discovering the possibilities, not having all the answers.`, `Not having the answer is an opportunity to be creative and get outside of your comfort zone.`,
-        `2. Being a beginner is a lot of fun and you are on the right track!`, `I know you think you're a beginner now but remember you from 6 months ago? Haha, I know I do. Celebrate your wins you! Treat yourself to a mental water break from the marathon.`,
-        `3. Stay curious.`, `Ask questions that help you to be more engaged. Open communication always leads to more effective collaboration. If you feel you are over communicating you probably could use a little more. God is in the details. `]
+        `2. Learning something new is a lot of fun!`, `Celebrate your wins no matter who seemingly small! Treat yourself to a mental water break from the marathon.`,
+        `3. Stay curious.`, `Ask questions that help you to be more engaged. Open communication always leads to more effective collaboration. If you feel you are over communicating you probably could use a little more. God is in the details. `],
+      uI: `Simple and colorful was my theme for the application. I felt the bright colors would convey my playful spirit and the simplicity of the design would convey my organizations skills and confidence.`
     },
     roles: ['Front-end Engineer','UI/UX Designer', 'Back-end Engineer'],
   },
@@ -64,6 +68,7 @@ export const tileData = [
     color: "#3c3c74",
     pngs: [trvlLanding, trvlHome, trvlNav, trvlPat, trvlTrips],
     tech: trvlts,
+    github: 'https://github.com/jldaggs88/thesis-travel-app',
     roles: ['Front-end Engineer','UI/UX Designer', 'Back-end Engineer'],
     case: null
   },{
@@ -75,6 +80,7 @@ export const tileData = [
     color: "#73ca9b",
     pngs: [triviLanding, triviQuestion, triviScore],
     tech: trivits,
+    github: 'https://github.com/jldaggs88/trivi',
     roles: ['Front-end Engineer','UI-Designer'],
     case: null
   }

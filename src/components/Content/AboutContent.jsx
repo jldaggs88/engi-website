@@ -3,7 +3,7 @@ import Typography from '@material-ui/core/Typography';
 
 const AboutContent = () => {
 
-  return <div style={{ padding: "5px 30px 30px" }}>
+  return <div className="about-content">
     <Typography variant="body2" component="p" align="center">
       After over 8 years of experience in retail leadership and management 
       I decided to change my career path and become a software engineer.

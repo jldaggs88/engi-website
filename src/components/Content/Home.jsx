@@ -17,9 +17,12 @@ const useStyles = makeStyles((theme) => ({
   root: {
     display: 'flex',
     justifyContent: 'center',
+
   },
   root2: {
     minWidth: 275,
+    backgroundColor: '#ffc4bc'
+
   },
   bullet: {
     display: 'inline-block',
@@ -67,7 +70,7 @@ const Home = () => {
       </CardActions>
     </Card>
     <Divider />
-    <Card className={classes.root2} variant="outlined">
+    <Card variant="outlined">
       <CardContent>
         <Typography align="center" variant="h5">
           Projects
@@ -79,7 +82,7 @@ const Home = () => {
       </CardActions>
     </Card>
     <Divider />
-    <Card className={classes.root2} variant="outlined">
+    <Card variant="outlined">
       <CardContent>
         <Typography align="center" variant="h5">
           Let's Work Together!
