@@ -15,41 +15,42 @@ import Footer from './components/Footer/index.jsx';
 
 const App = () => {
   const [flag, setFlag] = useState(false);
+  const [count, setCount] = useState(0);
 
-  useEffect(() => setTimeout(()=>setFlag(true), 3000), []);
+  useEffect(() => setTimeout(()=>{setFlag(true); setCount(1);}, 3000), []);
 
   return (
     <div className="app-container">
-      {flag === false ? <Landing /> :
+      {flag === false & count === 0 ? <Landing /> :
       <div>
-        <Header />
         <Router>
-          <div>
-            <BottomNavigation
-              showLabels
-            >
-              <BottomNavigationAction component={Link} to="/" label="Home" />
-              <BottomNavigationAction component={Link} to="/about" label="About" />
-              <BottomNavigationAction component={Link} to="/projects" label="Projects" />
-              <BottomNavigationAction component={Link} to="/contact" label="Contact" />
-            </BottomNavigation>
-            <Switch>
-              <Route path="/about">
-                <About />
-              </Route>
-              <Route path="/projects">
-                <Projects />
-              </Route>
-              <Route path="/contact">
-                <Contact />
-              </Route>
-              <Route path="/">
-                <Home />
-              </Route>
-            </Switch>
-          </div>
+          <Header />
+            <div>
+              <BottomNavigation
+                showLabels
+              >
+                <BottomNavigationAction component={Link} to="/" label="Home" />
+                <BottomNavigationAction component={Link} to="/about" label="About" />
+                <BottomNavigationAction component={Link} to="/projects" label="Projects" />
+                <BottomNavigationAction component={Link} to="/contact" label="Contact" />
+              </BottomNavigation>
+              <Switch>
+                <Route path="/about">
+                  <About />
+                </Route>
+                <Route path="/projects">
+                  <Projects />
+                </Route>
+                <Route path="/contact">
+                  <Contact />
+                </Route>
+                <Route path="/">
+                  <Home />
+                </Route>
+              </Switch>
+            </div>
+          <Footer />
         </Router>
-        <Footer />
       </div>}
     </div>
   )
