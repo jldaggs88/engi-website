@@ -35,7 +35,7 @@ const CaseStudy = ({ currentStudy, projects }) => {
               alt={`landing-${project.name}`}
             />
             <div className={classes.titles}>
-              <Typography variant="h5" gutterBottom>
+              <Typography variant="h4" gutterBottom>
                 {project.case.caseTitle[0]}
               </Typography>
               <Typography variant="subtitle1" gutterBottom>
@@ -45,7 +45,7 @@ const CaseStudy = ({ currentStudy, projects }) => {
           </div>
           <div className="case-cats">
 
-            <Typography variant="h6" fontWeight="fontWeightBold" gutterBottom>
+            <Typography variant="h5" fontWeight="fontWeightBold" gutterBottom>
               The Project
             </Typography>
             <Typography variant="subtitle1" gutterBottom>
@@ -66,14 +66,14 @@ const CaseStudy = ({ currentStudy, projects }) => {
                 <TableCell align="center">{project.case.duration} Month(s)</TableCell>
               </TableBody>
             </Table>
-            <Typography variant="h6" fontWeight="fontWeightBold" gutterBottom>
+            <Typography variant="h5" fontWeight="fontWeightBold" gutterBottom>
               Discovery
             </Typography>
             <Typography variant="subtitle1" gutterBottom>
               {project.case.discovery}
             </Typography>
 
-            <Typography variant="h6" fontWeight="fontWeightBold" gutterBottom>
+            <Typography variant="h5" fontWeight="fontWeightBold" gutterBottom>
               Prototype
             </Typography>
             <Typography variant="subtitle1" gutterBottom>
@@ -92,16 +92,17 @@ const CaseStudy = ({ currentStudy, projects }) => {
               image={project.imgs[1]}
               component="iframe"
               alt={`demo-${project.name}`}
+              styles={{ transform: "scale(0.5)", width: "494", height: "1010", frameborder: "0" }}
             />
 
-            <Typography variant="h6" fontWeight="fontWeightBold" gutterBottom>
+            <Typography variant="h5" fontWeight="fontWeightBold" gutterBottom>
               Look and Feel
             </Typography>
             <Typography variant="subtitle1" gutterBottom>
               {project.case.uI}
             </Typography>
 
-            <Typography variant="h6" fontWeight="fontWeightBold" gutterBottom>
+            <Typography variant="h5" fontWeight="fontWeightBold" gutterBottom>
               Learnings
             </Typography>
             <Typography variant="subtitle1" gutterBottom>
