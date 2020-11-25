@@ -9,7 +9,6 @@ import Divider from '@material-ui/core/Divider';
 import AboutContent from './AboutContent.jsx';
 import SocialButtons from './SocialButtons.jsx';
 import Messenger from './Messenger.jsx';
-// import ProjectsView from './ProjectsView.jsx';
 import Projects from './ProjectsPage.jsx';
 import jessa1 from '../../Brand/jessa1.png';
 

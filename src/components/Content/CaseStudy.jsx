@@ -61,9 +61,9 @@ const CaseStudy = ({ currentStudy, projects }) => {
                 </TableRow>
               </TableHead>
               <TableBody>
-                <TableCell align="center">Project Lead</TableCell>
-                <TableCell align="center">Jessa Daggs (Solo)</TableCell>
-                <TableCell align="center">{(new Date().getMonth() + 1) - new Date(2020, 10, 1).getMonth()} Month(s)</TableCell>
+                <TableCell align="center">{project.roles.join(" ")}</TableCell>
+                <TableCell align="center">{project.case.team}</TableCell>
+                <TableCell align="center">{project.case.duration} Month(s)</TableCell>
               </TableBody>
             </Table>
             <Typography variant="h6" fontWeight="fontWeightBold" gutterBottom>
@@ -90,7 +90,7 @@ const CaseStudy = ({ currentStudy, projects }) => {
             </Typography>
             <CardMedia
               image={project.imgs[1]}
-              component="img"
+              component="iframe"
               alt={`demo-${project.name}`}
             />
 
