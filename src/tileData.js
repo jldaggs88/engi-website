@@ -9,6 +9,7 @@ import triviQuestion from './Brand/Demos/triviQuestion.png';
 import triviScore from './Brand/Demos/triviScore.png';
 import trivits from './Brand/Demos/trivits.png';
 import trvlIcon from './Brand/Demos/trvlIcon.png';
+import trvllandf from './Brand/Demos/trvllandf.png';
 
 import trvlts from './Brand/Demos/trvlts.png';
 
@@ -28,7 +29,7 @@ export const tileData = [
     name: "TRVL",
     contentPosition: "left",
     color: "#3c3c74",
-    imgs: [trvlIcon, "https://jessa103607.invisionapp.com/console/share/MV1UBWZWQF/496303576"],
+    imgs: [trvlIcon, trvllandf],
     tech: trvlts,
     github: 'https://github.com/jldaggs88/thesis-travel-app',
     roles: ['Front-end Engineer','UI/UX Designer', 'Back-end Engineer'],
@@ -58,7 +59,7 @@ export const tileData = [
     name: "www.JessaDaggs.com",
     contentPosition: "right",
     color: "#ffc4bc",
-    imgs: [jdComUC, "https://jessa103607.invisionapp.com/console/share/5N1RMLBTQ4/496306584"],
+    imgs: [jdComUC, null],
     tech: jdts,
     github: 'https://github.com/jldaggs88/engi-website',
     case: {

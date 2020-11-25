@@ -90,9 +90,8 @@ const CaseStudy = ({ currentStudy, projects }) => {
             </Typography>
             <CardMedia
               image={project.imgs[1]}
-              component="iframe"
+              component="img"
               alt={`demo-${project.name}`}
-              styles={{ transform: "scale(0.5)", width: "494", height: "1010", frameborder: "0" }}
             />
 
             <Typography variant="h5" fontWeight="fontWeightBold" gutterBottom>
