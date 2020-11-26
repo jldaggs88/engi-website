@@ -37,9 +37,9 @@ const ProjectsView = ({ projects }) => {
                 })}
               </div>
               { project.case !== null ? <Button size="small" aria-label={project.name} color="primary" onClick={updateView}>
-                View Case Study
+                Design
               </Button> : null }
-              <Button size="small" color="primary" href={project.github}>View on Github</Button>
+              <Button size="small" color="primary" href={project.github}>Development</Button>
             </div>
           </div>
         ))}

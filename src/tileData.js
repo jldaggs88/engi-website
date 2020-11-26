@@ -2,16 +2,8 @@ import trvl from './Brand/trvl.png';
 import TRIVI from './Brand/TRIVI.png';
 import jdCom from './Brand/jdCom.png';
 import jdComUC from './Brand/jdComUC.png';
-import jdts from './Brand/Demos/jdts.png';
-import jdHome from './Brand/Demos/jdHome.png';
-import triviLanding from './Brand/Demos/triviLanding.png';
-import triviQuestion from './Brand/Demos/triviQuestion.png';
-import triviScore from './Brand/Demos/triviScore.png';
-import trivits from './Brand/Demos/trivits.png';
 import trvlIcon from './Brand/Demos/trvlIcon.png';
 import trvllandf from './Brand/Demos/trvllandf.png';
-
-import trvlts from './Brand/Demos/trvlts.png';
 
 export const tileData = [
   {
@@ -30,7 +22,6 @@ export const tileData = [
     contentPosition: "left",
     color: "#3c3c74",
     imgs: [trvlIcon, trvllandf],
-    tech: trvlts,
     github: 'https://github.com/jldaggs88/thesis-travel-app',
     roles: ['Front-end Engineer','UI/UX Designer', 'Back-end Engineer'],
     case: {
@@ -60,7 +51,6 @@ export const tileData = [
     contentPosition: "right",
     color: "#ffc4bc",
     imgs: [jdComUC, null],
-    tech: jdts,
     github: 'https://github.com/jldaggs88/engi-website',
     case: {
       caseTitle: [`www.JessaDaggs.com Case Study`, `Creating a captivating online presence`],
@@ -95,8 +85,7 @@ export const tileData = [
     name: "TRIVI",
     contentPosition: "middle",
     color: "#73ca9b",
-    imgs: [triviLanding, triviQuestion, triviScore],
-    tech: trivits,
+    imgs: [],
     github: 'https://github.com/jldaggs88/trivi',
     roles: ['Front-end Engineer','UI-Designer'],
     case: null
