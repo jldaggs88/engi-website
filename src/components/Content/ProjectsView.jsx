@@ -37,7 +37,7 @@ const ProjectsView = ({ projects }) => {
               </div>
               { project.case !== null ? 
                <Tooltip title="View Design on XFolio">
-                <IconButton  href="https://uxfol.io/project/0414f7a6/Tell-The-Story-of-Your-Design">
+                <IconButton  href={project.xfolio}>
                   <img src={xfolio} height={25} width={25}/>
                 </IconButton> 
                </Tooltip>

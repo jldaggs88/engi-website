@@ -9,39 +9,14 @@ export const tileData = [
   {
     img: trvl,
     title: 'Collaborative Travel Planner',
-    description: ["Advanced travel planning mobile application.",  `Plan Trips,
-      Get Budget-Friendly
-      Flight & Hotel Prices,
-      Book Lodging,
-      Get Gas Prices,
-      Keep Trip Itinerary,
-      Get Weather Updates,
-      Split payments with other TRVLers,
-      Group Chat`],
+    description: ["Advanced travel planning mobile application."],
     name: "TRVL",
     contentPosition: "left",
     color: "#3c3c74",
-    imgs: [trvlIcon, trvllandf],
+    imgs: [trvlIcon],
+    xfolio: "https://uxfol.io/project/0414f7a6/Tell-The-Story-of-Your-Design",
     github: 'https://github.com/jldaggs88/thesis-travel-app',
     roles: ['Front-end Engineer','UI/UX Designer', 'Back-end Engineer'],
-    case: {
-      caseTitle: [`TRVL Case Study`, `Enhancing the group travel planning experience`],
-      problemSummary: `Coordinating and managing the details of a trip that includes multiple travelers can be quite a challenge. During our research, we discovered that each traveler often has a different budget and ideas about the destination and activities to enjoy once there. Another pain point was splitting the expenses between each traveler. We incorporated
-      features that include automating the destination selection based on the group's collective preferences and real-time communication between travelers.`,
-      problems: [`Travelers often feel that making decisions based on everyone's preferences can be political.`, `Choosing a destination that meets everyone's budget requires a lot of research.`],
-      solutions: [`We created a feature that automates choosing a destination based on each travelers preferences.`,
-        `We eliminated the need for travelers to share private information such as how much they have to spend.`],
-      audience: `This application will be used by travelers who want to focus more of their energy on enjoying the trip and less on managing it.`,
-      outcome: [``],
-      team: ['Operation Deploy - 5 members'],
-      duration: (new Date(2020, 10, 1).getMonth()) - new Date(2020, 8, 1).getMonth(),
-      discovery: `Services like Expedia don't meet travelers requirement of automating the destination or managing the itinerary once they land. By creating empathic users stories we can help users to manage cost and alleviate the angst of managing a trip.`,
-      takeAways: [`1. The strategy is key.`, `A good strategy includes determining a mission, accessing what we are technically inclined to achieve in the given time frame and establishing target users and how they will interact with the service.`,
-        `2. Nothing is hard, just new.`, `When learning something new difficulty means that this a new problem and to solve it I must stretch outside of what I know to be true in order to succeed.`,
-        `3. Smaller projects require more collaboration.`, `On smaller projects, developers will work in the same files at the same time. Peer programming is a great solution. It gives each developer insight to the why/how the code is written. It provides the
-        opportunity to unpack the complexity and merge each developers vision without merge conflicts`],
-      uI: `This app contains many features. One of my main focuses was to provide users with all the bells and whistles without overwhelming the interface. Organized and clean was our design approach to create increase accessibility and build trust with TRVL users.`
-    },
   },
   { 
     img: jdCom,
@@ -50,7 +25,8 @@ export const tileData = [
     name: "www.JessaDaggs.com",
     contentPosition: "right",
     color: "#ffc4bc",
-    imgs: [jdComUC, null],
+    imgs: [jdComUC],
+    xfolio: null,
     github: 'https://github.com/jldaggs88/engi-website',
     case: {
       caseTitle: [`www.JessaDaggs.com Case Study`, `Creating a captivating online presence`],
@@ -85,7 +61,7 @@ export const tileData = [
     name: "TRIVI",
     contentPosition: "middle",
     color: "#73ca9b",
-    imgs: [],
+    xfolio: null,
     github: 'https://github.com/jldaggs88/trivi',
     roles: ['Front-end Engineer','UI-Designer'],
     case: null
