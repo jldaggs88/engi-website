@@ -30,14 +30,14 @@ const App = () => {
                 showLabels
               >
                 <BottomNavigationAction component={Link} to="/" label="Home" />
-                <BottomNavigationAction component={Link} to="/about" label="About" />
+                {/* <BottomNavigationAction component={Link} to="/about" label="About" /> */}
                 <BottomNavigationAction component={Link} to="/projects" label="Projects" />
                 <BottomNavigationAction component={Link} to="/contact" label="Contact" />
               </BottomNavigation>
               <Switch>
-                <Route path="/about">
+                {/* <Route path="/about">
                   <About />
-                </Route>
+                </Route> */}
                 <Route path="/projects">
                   <Projects />
                 </Route>
