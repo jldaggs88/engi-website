@@ -10,7 +10,7 @@ import BottomNavigationAction from '@material-ui/core/BottomNavigationAction';
 
 import Landing from './components/Landing/index.jsx';
 import Header from './components/Header/index.jsx';
-import { Home, About, Projects, Contact } from './components/Content/index.jsx';
+import { Home, Projects, Contact } from './components/Content/index.jsx';
 import Footer from './components/Footer/index.jsx';
 
 const App = () => {

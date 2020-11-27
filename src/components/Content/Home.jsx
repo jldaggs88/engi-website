@@ -6,7 +6,6 @@ import CardActions from '@material-ui/core/CardActions';
 import Typography from '@material-ui/core/Typography';
 import Divider from '@material-ui/core/Divider';
 
-import AboutContent from './AboutContent.jsx';
 import SocialButtons from './SocialButtons.jsx';
 import Messenger from './Messenger.jsx';
 import Projects from './ProjectsPage.jsx';
@@ -49,17 +48,6 @@ const Home = () => {
           <SocialButtons />
         </CardContent>
       </div>
-    </Card>
-    <Divider />
-    <Card className={classes.root2} variant="outlined">
-      <CardContent>
-        <Typography align="center" variant="h5">
-          About Me
-        </Typography>
-        <AboutContent />
-      </CardContent>
-      <CardActions>
-      </CardActions>
     </Card>
     <Divider />
     <Card variant="outlined">

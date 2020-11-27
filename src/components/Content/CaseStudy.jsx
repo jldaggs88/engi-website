@@ -1,34 +1,35 @@
-import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
-import Typography from '@material-ui/core/Typography';
-import CardMedia from '@material-ui/core/CardMedia';
-import Table from '@material-ui/core/Table';
-import TableBody from '@material-ui/core/TableBody';
-import TableCell from '@material-ui/core/TableCell';
-import TableHead from '@material-ui/core/TableHead';
-import TableRow from '@material-ui/core/TableRow';
+// import React from 'react';
+// import { makeStyles } from '@material-ui/core/styles';
+// import Typography from '@material-ui/core/Typography';
+// import CardMedia from '@material-ui/core/CardMedia';
+// import Table from '@material-ui/core/Table';
+// import TableBody from '@material-ui/core/TableBody';
+// import TableCell from '@material-ui/core/TableCell';
+// import TableHead from '@material-ui/core/TableHead';
+// import TableRow from '@material-ui/core/TableRow';
 
-const useStyles = makeStyles((theme) => ({
-  root: {
-    width: '50%',
-    float: 'left',
-    padding: '5%'
-  },
-   titles: {
-    height: '50%',
-    padding: '3%'
-  }
-}));
+// const useStyles = makeStyles((theme) => ({
+//   root: {
+//     width: '50%',
+//     float: 'left',
+//     padding: '5%'
+//   },
+//    titles: {
+//     height: '50%',
+//     padding: '3%'
+//   }
+// }));
 
-const CaseStudy = ({ currentStudy, projects }) => {
+// const CaseStudy = ({ currentStudy, projects }) => {
 
-  const classes = useStyles();
+//   const classes = useStyles();
 
-  return <div className="case-container">
-    {projects.map((project, index)=>{
-      if(currentStudy === project.name){
-        return <div className="case">
-          <div className="case-card" key={`case-study-${index}`}>
+//   return <div className="case-container">
+//     {projects.map((project, index)=>{
+//       if(currentStudy === project.name){
+//         return <div className="case">
+
+          {/* <div className="case-card" key={`case-study-${index}`}>
             <CardMedia className={classes.root}
               image={project.imgs[0]}
               component="img"
@@ -122,11 +123,11 @@ const CaseStudy = ({ currentStudy, projects }) => {
             <Typography variant="body2" gutterBottom>
               {project.case.takeAways[5]}
             </Typography>
-          </div>
-        </div>
-      }
-    })}
-  </div>;
-};
+          </div> */}
+//         </div>
+//       }
+//     })}
+//   </div>;
+// };
 
-export default CaseStudy;
+// export default CaseStudy;
