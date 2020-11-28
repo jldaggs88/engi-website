@@ -14,7 +14,7 @@ export const tileData = [
     contentPosition: "left",
     color: "#3c3c74",
     imgs: [trvlIcon],
-    xfolio: "https://uxfol.io/project/0414f7a6/Tell-The-Story-of-Your-Design",
+    uxfolio: "https://uxfol.io/project/0414f7a6/Tell-The-Story-of-Your-Design",
     github: 'https://github.com/jldaggs88/thesis-travel-app',
     roles: ['Front-end Engineer','UI/UX Designer', 'Back-end Engineer'],
   },
