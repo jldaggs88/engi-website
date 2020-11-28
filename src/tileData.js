@@ -26,7 +26,7 @@ export const tileData = [
     contentPosition: "right",
     color: "#ffc4bc",
     imgs: [jdComUC],
-    xfolio: null,
+    uxfolio: null,
     github: 'https://github.com/jldaggs88/engi-website',
     case: {
       caseTitle: [`www.JessaDaggs.com Case Study`, `Creating a captivating online presence`],
@@ -61,7 +61,7 @@ export const tileData = [
     name: "TRIVI",
     contentPosition: "middle",
     color: "#73ca9b",
-    xfolio: null,
+    uxfolio: null,
     github: 'https://github.com/jldaggs88/trivi',
     roles: ['Front-end Engineer','UI-Designer'],
     case: null

@@ -34,6 +34,10 @@ body {
   text-align-last: center;
 }
 
+.project {
+  padding: 50px;
+}
+
 .demo-container {
   margin: auto;
   padding: 10%;

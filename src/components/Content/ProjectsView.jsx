@@ -1,23 +1,18 @@
-import React, { useState } from 'react';
-import IconButton from '@material-ui/core/IconButton';
+import React from 'react';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import Typography from '@material-ui/core/Typography';
 import Chip from '@material-ui/core/Chip';
-import Tooltip from '@material-ui/core/Tooltip';
+import Button from '@material-ui/core/Button';
 
-
-import xfolio from '../../icons/xfolio.png';
+import uxfolio from '../../icons/uxfolio.png';
 
 const ProjectsView = ({ projects }) => {
 
-  const [view, setView] = useState(null);
-
   return (
     <div>
-      {view === null ? 
-        <div className="project-container">
+      <div className="project-container">
         {projects.map((project, index) => (
-          <div key={`project-${index}`}>
+          <div key={`project-${index}`} className="project">
             <img
               alt={project.title}
               src={project.img}
@@ -32,26 +27,27 @@ const ProjectsView = ({ projects }) => {
               </Typography>
               <div className="roles">
                 {project.roles.map((role, index)=>{
-                  return <Chip variant="outlined" size="small"  disabled key={`role=${index}`} label={role} />
+                  return <Chip variant="outlined" disabled size="small"  disabled key={`role=${index}`} label={role} />
                 })}
               </div>
-              { project.xfolio !== null ? 
-               <Tooltip title="View Design on XFolio">
-                <IconButton  href={project.xfolio}>
-                  <img src={xfolio} height={25} width={25}/>
-                </IconButton> 
-               </Tooltip>
+              { project.uxfolio !== null ? 
+               <Button 
+                href={project.uxfolio}
+                startIcon={ <img src={uxfolio} height={25} width={25} /> }
+              >
+                View Design
+              </Button>
               : null }
-               <Tooltip title="View Development on Github">
-                <IconButton href={project.github}>
-                  <GitHubIcon />
-                </IconButton>
-               </Tooltip>
+              <Button 
+                href={project.github}
+                startIcon={ <GitHubIcon /> }
+              >
+                View Development
+              </Button>
             </div>
           </div>
         ))}
-      </div> : view
-      }
+      </div>
     </div>
   );
 }
