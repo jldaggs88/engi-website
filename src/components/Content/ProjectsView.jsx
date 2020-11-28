@@ -35,7 +35,7 @@ const ProjectsView = ({ projects }) => {
                   return <Chip variant="outlined" size="small"  disabled key={`role=${index}`} label={role} />
                 })}
               </div>
-              { project.case !== null ? 
+              { project.xfolio !== null ? 
                <Tooltip title="View Design on XFolio">
                 <IconButton  href={project.xfolio}>
                   <img src={xfolio} height={25} width={25}/>
