@@ -6,9 +6,10 @@ import GitHubIcon from '@material-ui/icons/GitHub';
 import InstagramIcon from '@material-ui/icons/Instagram';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 
+import uxfolio from '../../icons/uxfolio.png';
 import dev from '../../icons/dev.png';
 
-const SocialButtons = () => {
+const SocialButtons = ({ projects }) => {
 
   return <div>
     <Box
@@ -29,6 +30,8 @@ const SocialButtons = () => {
         </IconButton>
         <IconButton href="https://www.instagram.com/jessaness/">
           <InstagramIcon />
+        </IconButton><IconButton href="https://uxfol.io/daggs.jessa">
+          <img src={uxfolio} style={{ height:"50px" }} />
         </IconButton>
       </ButtonGroup>
     </Box>

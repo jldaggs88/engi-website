@@ -4,7 +4,7 @@ import Typography from '@material-ui/core/Typography';
 import Chip from '@material-ui/core/Chip';
 import Button from '@material-ui/core/Button';
 
-import uxfolio from '../../icons/uxfolio.png';
+import uxColor from '../../icons/uxColor.png';
 
 const ProjectsView = ({ projects }) => {
 
@@ -33,7 +33,7 @@ const ProjectsView = ({ projects }) => {
               { project.uxfolio !== null ? 
                <Button 
                 href={project.uxfolio}
-                startIcon={ <img src={uxfolio} height={25} width={25} /> }
+                startIcon={ <img src={uxColor} height={25} width={25} /> }
               >
                 View Design
               </Button>

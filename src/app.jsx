@@ -10,7 +10,7 @@ import BottomNavigationAction from '@material-ui/core/BottomNavigationAction';
 
 import Landing from './components/Landing/index.jsx';
 import Header from './components/Header/index.jsx';
-import { Home, Projects, Contact } from './components/Content/index.jsx';
+import { Home, Projects, Contact, About } from './components/Content/index.jsx';
 import Footer from './components/Footer/index.jsx';
 
 const App = () => {
@@ -30,14 +30,14 @@ const App = () => {
                 showLabels
               >
                 <BottomNavigationAction component={Link} to="/" label="Home" />
-                {/* <BottomNavigationAction component={Link} to="/about" label="About" /> */}
+                <BottomNavigationAction component={Link} to="/about" label="About" />
                 <BottomNavigationAction component={Link} to="/projects" label="Projects" />
                 <BottomNavigationAction component={Link} to="/contact" label="Contact" />
               </BottomNavigation>
               <Switch>
-                {/* <Route path="/about">
+                <Route path="/about">
                   <About />
-                </Route> */}
+                </Route>
                 <Route path="/projects">
                   <Projects />
                 </Route>
