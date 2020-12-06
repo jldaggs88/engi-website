@@ -1,9 +1,11 @@
 import trvl from './Brand/trvl.png';
 import TRIVI from './Brand/TRIVI.png';
+import jukejams from './Brand/jukejams.png';
 import jdCom from './Brand/jdCom.png';
 import jdComUC from './Brand/jdComUC.png';
 import trvlIcon from './Brand/Demos/trvlIcon.png';
-import trvllandf from './Brand/Demos/trvllandf.png';
+
+// import trvllandf from './Brand/Demos/trvllandf.png';
 
 export const tileData = [
   {
@@ -11,12 +13,20 @@ export const tileData = [
     title: 'Collaborative Travel Planner',
     description: ["Advanced travel planning mobile application."],
     name: "TRVL",
-    contentPosition: "left",
-    color: "#3c3c74",
     imgs: [trvlIcon],
-    uxfolio: "https://uxfol.io/project/0414f7a6/Tell-The-Story-of-Your-Design",
+    uxfolio: "https://uxfol.io/project/0414f7a6/A-New-Approach-to-Travel-Planning",
     github: 'https://github.com/jldaggs88/thesis-travel-app',
     roles: ['Front-end Engineer','UI/UX Designer', 'Back-end Engineer'],
+  },
+  {
+    img: jukejams,
+    title: 'Multi-user Jukebox',
+    description: ["Advanced travel planning mobile application."],
+    name: "JukeJams",
+    imgs: [trvlIcon],
+    uxfolio: "https://uxfol.io/project/04c5645a/The-Jukebox-of-the-Future",
+    github: 'https://github.com/jldaggs88/deployed-app-test',
+    roles: ['Front-end Engineer','UI Design', 'UX Research', 'Deployment'],
   },
   { 
     img: jdCom,
