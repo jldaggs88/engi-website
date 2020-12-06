@@ -21,7 +21,7 @@ export const tileData = [
   {
     img: jukejams,
     title: 'Multi-user Jukebox',
-    description: ["Advanced travel planning mobile application."],
+    description: ["Multi-user jukebox service that allows listeners to collectively DJ the event they are attending to ensure that every song played is a crowd favorite."],
     name: "JukeJams",
     imgs: [trvlIcon],
     uxfolio: "https://uxfol.io/project/04c5645a/The-Jukebox-of-the-Future",
