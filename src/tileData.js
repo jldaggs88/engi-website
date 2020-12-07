@@ -26,7 +26,7 @@ export const tileData = [
   {
     img: puppyLove,
     title: 'Puppy Social Networking Application',
-    description: ["Platform created to connect dogs parents and aid them in build community as they help their pets to become more social."],
+    description: ["Platform created to connect dogs parents and aid them in socializing their pets."],
     name: "PuppyLove",
     uxfolio: " https://uxfol.io/project/0484947b/Matching-with-PuppyLove",
     github: 'https://github.com/joshjnunez/PuppyLove',
@@ -63,7 +63,7 @@ export const tileData = [
         `3. Stay curious.`, `Ask questions that help you to be more engaged. Open communication always leads to more effective collaboration. If you feel you are over-communicating you probably could use a little more. God is in the details. `],
       uI: `Simple and colorful was my theme for the application. I felt the bright colors would convey my playful spirit and the simplicity of the design would convey my organizational skills and confidence.`
     },
-    roles: ['Front-end Engineer','UI/UX Designer', 'Back-end Engineer'],
+    roles: ['Lead (Solo)'],
   },
   {
     img: TRIVI,
@@ -74,7 +74,7 @@ export const tileData = [
     color: "#73ca9b",
     uxfolio: null,
     github: 'https://github.com/jldaggs88/trivi',
-    roles: ['Front-end Engineer','UI-Designer'],
+    roles: ['Lead (Solo)'],
     case: null
   }
 ];
