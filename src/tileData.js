@@ -2,10 +2,7 @@ import trvl from './Brand/trvl.png';
 import TRIVI from './Brand/TRIVI.png';
 import jukejams from './Brand/jukejams.png';
 import jdCom from './Brand/jdCom.png';
-import jdComUC from './Brand/jdComUC.png';
-import trvlIcon from './Brand/Demos/trvlIcon.png';
-
-// import trvllandf from './Brand/Demos/trvllandf.png';
+import puppyLove from './Brand/puppyLove.png';
 
 export const tileData = [
   {
@@ -13,7 +10,6 @@ export const tileData = [
     title: 'Collaborative Travel Planner',
     description: ["Advanced travel planning mobile application."],
     name: "TRVL",
-    imgs: [trvlIcon],
     uxfolio: "https://uxfol.io/project/0414f7a6/A-New-Approach-to-Travel-Planning",
     github: 'https://github.com/jldaggs88/thesis-travel-app',
     roles: ['Front-end Engineer','UI/UX Designer', 'Back-end Engineer'],
@@ -23,7 +19,6 @@ export const tileData = [
     title: 'Multi-user Jukebox',
     description: ["Multi-user jukebox service that allows listeners to collectively DJ the event they are attending to ensure that every song played is a crowd favorite."],
     name: "JukeJams",
-    imgs: [trvlIcon],
     uxfolio: "https://uxfol.io/project/04c5645a/The-Jukebox-of-the-Future",
     github: 'https://github.com/jldaggs88/deployed-app-test',
     roles: ['Front-end Engineer','UI Design', 'UX Research', 'Deployment'],
@@ -33,9 +28,6 @@ export const tileData = [
     title: 'Online Portfolio',
     description: [`JessaDaggs.com was created to showcase how I work as a designer and engineer.`],
     name: "www.JessaDaggs.com",
-    contentPosition: "right",
-    color: "#ffc4bc",
-    imgs: [jdComUC],
     uxfolio: null,
     github: 'https://github.com/jldaggs88/engi-website',
     case: {
@@ -63,6 +55,15 @@ export const tileData = [
       uI: `Simple and colorful was my theme for the application. I felt the bright colors would convey my playful spirit and the simplicity of the design would convey my organizational skills and confidence.`
     },
     roles: ['Front-end Engineer','UI/UX Designer', 'Back-end Engineer'],
+  },
+  {
+    img: puppyLove,
+    title: 'Puppy Social Networking Application',
+    description: ["Platform created to connect dogs parents and aid them in build community as they help their pets to become more social."],
+    name: "PuppyLove",
+    uxfolio: " https://uxfol.io/project/0484947b/Matching-with-PuppyLove",
+    github: 'https://github.com/joshjnunez/PuppyLove',
+    roles: [ 'UI Design', 'UX Research', 'Front-end Engineer', 'Back-end Engineer'],
   },
   {
     img: TRIVI,
