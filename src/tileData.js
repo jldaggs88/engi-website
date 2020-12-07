@@ -23,6 +23,15 @@ export const tileData = [
     github: 'https://github.com/jldaggs88/deployed-app-test',
     roles: ['Front-end Engineer','UI Design', 'UX Research', 'Deployment'],
   },
+  {
+    img: puppyLove,
+    title: 'Puppy Social Networking Application',
+    description: ["Platform created to connect dogs parents and aid them in build community as they help their pets to become more social."],
+    name: "PuppyLove",
+    uxfolio: " https://uxfol.io/project/0484947b/Matching-with-PuppyLove",
+    github: 'https://github.com/joshjnunez/PuppyLove',
+    roles: [ 'UI Design', 'UX Research', 'Front-end Engineer', 'Back-end Engineer'],
+  },
   { 
     img: jdCom,
     title: 'Online Portfolio',
@@ -55,15 +64,6 @@ export const tileData = [
       uI: `Simple and colorful was my theme for the application. I felt the bright colors would convey my playful spirit and the simplicity of the design would convey my organizational skills and confidence.`
     },
     roles: ['Front-end Engineer','UI/UX Designer', 'Back-end Engineer'],
-  },
-  {
-    img: puppyLove,
-    title: 'Puppy Social Networking Application',
-    description: ["Platform created to connect dogs parents and aid them in build community as they help their pets to become more social."],
-    name: "PuppyLove",
-    uxfolio: " https://uxfol.io/project/0484947b/Matching-with-PuppyLove",
-    github: 'https://github.com/joshjnunez/PuppyLove',
-    roles: [ 'UI Design', 'UX Research', 'Front-end Engineer', 'Back-end Engineer'],
   },
   {
     img: TRIVI,
