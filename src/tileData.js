@@ -25,8 +25,8 @@ export const tileData = [
   },
   {
     img: puppyLove,
-    title: 'Puppy Social Networking Application',
-    description: ["Platform created to connect dogs parents and aid them in socializing their pets."],
+    title: 'Puppy Social Network',
+    description: ["Platform created to connect dog parents and aid them in socializing their pets."],
     name: "PuppyLove",
     uxfolio: " https://uxfol.io/project/0484947b/Matching-with-PuppyLove",
     github: 'https://github.com/joshjnunez/PuppyLove',
